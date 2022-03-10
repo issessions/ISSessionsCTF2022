@@ -1,0 +1,28 @@
+attempts: 0
+author: Cristian
+category: NETWORK
+description: The MuBit Quantum Computing Company recently found artifacts that suggest
+  a breach in their network. However, their IDS did not capture any notable exfiltrations
+  and the IT team could not locate any notable files being transmitted.<br><br><br>Are
+  you able to find suspicious traffic leading to evidence of stolen materials?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- SlowAndSteady.zip
+flags:
+- monkeyCTF{510w_4nd_5t34y_w1n5_th3_r4c3}
+hints:
+- content: Wireshark's "Export Packet Dissections" may help make the data more manageable
+    to work with!
+  cost: 0
+name: SlowAndSteady
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '1.0'

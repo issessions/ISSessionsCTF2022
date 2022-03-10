@@ -1,0 +1,28 @@
+attempts: 0
+author: Connor Laidlaw
+category: PROGRAMMING
+connection_info: nc challenges.issessions.ca 5105
+description: '"What is with the doors on this island... WHY ARE THEY ALL LOCKED?"
+  You think yourself, before remembering monkeys also don''t like to have their things
+  stolen.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{alot_of_rules_huh}
+hints:
+- content: 'The first step would be to iterate through and determine the lowest and
+    highest value, which we know will always not be missing.<br><br>Next, maybe we
+    could compare against the values we know should be in the list?<br><br>Make sure
+    you send your values back in the form: 9 2 1 8<br><br>'
+  cost: 0
+name: WhichIsMissing
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

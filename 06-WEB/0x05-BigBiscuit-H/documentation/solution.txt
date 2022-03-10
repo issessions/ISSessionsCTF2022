@@ -1,0 +1,13 @@
+Right-click and select Inspect
+
+Navigate to the cookies section and notice that there is a cookie called "user"
+
+After base64 decoding the value of that cookie, you'll get {name: "normal_user", cool: "False"}
+
+Replace the values and make it look like {name: "supercookie", cool: "True"} and then base64 encode it again
+
+e25hbWU6ICJzdXBlcmNvb2tpZSIsIGNvb2w6ICJUcnVlIn0=
+
+Replace the base64 encode value of user with e25hbWU6ICJzdXBlcmNvb2tpZSIsIGNvb2w6ICJUcnVlIn0= and then refresh the web page.
+
+FLAG: monkeyCTF{c00kie_monster}

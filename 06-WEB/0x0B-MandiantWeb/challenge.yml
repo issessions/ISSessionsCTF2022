@@ -1,0 +1,22 @@
+attempts: 0
+author: Mandiant
+category: WEB
+description: "A large group of monkeys on the island think they\u2019re super 1337\
+  \ haxors. Can you find a way to get into their monkey authentication site? We know\
+  \ the site is out there somewhere, they recently registered 'hackermonkeys.com'."
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{wz4yjmnuf6f53q2ar4lmdf1ffgfqhwad}
+hint_cost: 0
+name: 'Mandiant: So Predictable'
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

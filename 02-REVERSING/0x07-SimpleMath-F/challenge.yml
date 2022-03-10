@@ -1,0 +1,25 @@
+attempts: 0
+author: lulucadi
+category: REVERSING
+description: Find the password to unlock the binary and obtain the flag!<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- SimpleMath.zip
+flags:
+- monkeyCTF{I_C4N_M4TH}
+hints:
+- content: 1) Have you tried using a reversing tool?<br>2) There must be a way to
+    see what simple math is involved...
+  cost: 0
+name: Simple Math
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '1.0'

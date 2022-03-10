@@ -1,0 +1,29 @@
+attempts: 0
+author: cupojavajoe
+category: REVERSING
+description: 'Look what we have here! A locked box? There might be something inside,
+  but the lock doesn''t seem to be normal...<br>Luckly, it looks like someone left
+  a note on how the lock works, let''s get to it!<br><br>The flag is the shortest
+  input required to trigger a success message from the provided program.<br>Note:
+  Don''t forget to include the ending E in the flag.<br>'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- LockPicking.zip
+flags:
+- monkeyCTF{274648351E}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>One of the fiddle operations is a
+    huge subtraction... Maybe an underflow will help find the shortest solution?<br>
+  cost: 0
+name: LockPicking
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '0.1'

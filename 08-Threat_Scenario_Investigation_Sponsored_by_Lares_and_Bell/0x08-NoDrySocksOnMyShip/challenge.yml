@@ -1,0 +1,27 @@
+attempts: 0
+author: Louai/Kurt
+category: 'Threat Scenario Investigation: Sponsored by Lares and Bell'
+connection_info: https://bit.ly/3KhG71M
+description: 'Question #08:<br>------------<br><br>The attacker establishes a SOCKS
+  proxy tunnel back to a server they control in order to reach hosts on the internal
+  network. What is the IP address of the server with which the attacker establishes
+  this tunnel? <br><br>ANSWER FORMAT: monkeyCTF{IpAddress}<br>EXAMPLE ANSWER: monkeyCTF{1.2.3.4}<br><br>**IMPORTANT**<br>All
+  relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb
+  25, 2022 @ 00:20:00.000   (EST)<br>It is important to note that the timezone above
+  are in EST. If you machine is not in EST you will have to adjust the above times
+  to your equivalent time zone.<br>You will know that you are looking at the correct
+  period if there are 1,000,151 logs.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{138.197.145.159}
+hint_cost: 0
+name: 08-No Dry Socks On My Ship
+requirements:
+- CoC
+state: visible
+type: dynamic
+value: 100
+version: '0.1'

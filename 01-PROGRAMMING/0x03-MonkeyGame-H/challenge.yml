@@ -1,0 +1,27 @@
+attempts: 0
+author: Connor Laidlaw
+category: PROGRAMMING
+connection_info: nc challenges.issessions.ca 5103
+description: Wandering around town, a monkey hollers over to you:<br><br>"Hey you,
+  yeah you, you wanna win BIIIIIG banannan? Come  try to beat my game!"<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{string_parsing}
+hints:
+- content: 'A tool like pwntools would be helpful to connect to the NC using code.<br><br>Once
+    you''ve done that, you''ll need to split the line given you into more manageable
+    chunks so you can perform mathematical operations.<br><br>There will only be addition
+    and subtraction, so you don''t need to worry about BEDMAS rules. '
+  cost: 0
+name: Monkey Math
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

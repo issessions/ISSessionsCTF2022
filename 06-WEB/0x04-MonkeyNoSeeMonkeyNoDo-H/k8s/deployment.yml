@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monkey-no-see-monkey-no-do
+  labels:
+    app: monkey-no-see-monkey-no-do
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monkey-no-see-monkey-no-do
+  template:
+    metadata:
+      labels:
+        app: monkey-no-see-monkey-no-do
+    spec:
+      containers:
+      - name: monkey-no-see-monkey-no-do
+        image:  gcr.io/issessions/monkeynoseemonkeynodo-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

@@ -1,0 +1,23 @@
+attempts: 0
+author: Minh Giang
+category: PROGRAMMING
+description: A keylogger was installed onto a victim's laptop. and we have retrieved
+  the log file.<br>Check the log file and see if there's anything interesting.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- KeyloggerReport.zip
+flags:
+- monkeyCTF{my_v3ry_s3cur3_pa55w0rd}
+hint_cost: 0
+name: KeyloggerReport
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

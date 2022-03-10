@@ -1,0 +1,1 @@
+Look up the "Strings" command, and it's various flags such as -n

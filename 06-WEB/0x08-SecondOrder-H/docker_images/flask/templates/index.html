@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+          {% for category, message in messages %}
+              <div class="alert alert-{{ category }}" role="alert" style="text-align: center;">
+                  {{ message }}<br/>
+              </div>
+          {% endfor %}
+      {% endif %}
+  {% endwith %}
+  {% for i in range(size) %}
+    {% if i % 2 == 0 %}
+      <form action="/banana" method="get">
+        <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">{{ b[i][1] }}</h2>
+              <p class="lead">{{ b[i][2] }}</p>
+              <input class="form-control ifb" name="id" type="hidden" value="{{ b[i][0] }}">
+              <button type="submit" class="btn btn-warning">View more</button>
+            </div>
+            <div class="col-md-5">
+              <img src="../static/images/{{ b[i][3] }}.jpg" alt="" width="600" height="500">
+            </div>
+        </div>
+      </form>
+      <hr/>
+    {% else %}
+      <form action="/banana" method="get">
+        <div class="row featurette">
+            <div class="col-md-5">
+              <img src="../static/images/{{ b[i][3] }}.jpg" alt="" width="600" height="500">
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">{{ b[i][1] }}</h2>
+              <p class="lead">{{ b[i][2] }}</p>
+              <input class="form-control ifb" name="id" type="hidden" value="{{ b[i][0] }}">
+              <button type="submit" class="btn btn-warning">View more</button>
+            </div>
+        </div>
+      </form>
+      <hr/>
+    {% endif %}
+    
+  {% endfor %}
+{% endblock %}

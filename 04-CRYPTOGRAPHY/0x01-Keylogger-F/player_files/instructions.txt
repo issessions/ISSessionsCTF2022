@@ -1,0 +1,2 @@
+We found a log file that doesn't make much sense to us. It seems to be a keylogger that created this file. 
+Maybe you can figure it out.

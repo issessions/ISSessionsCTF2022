@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: login-mia
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/backend-protocol: "FCGI"
+    nginx.ingress.kubernetes.io/fastcgi-index: "index.php"
+    nginx.ingress.kubernetes.io/fastcgi-params-configmap: "login-mia"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - nologin.issessions.ca
+      secretName: login-mia-tls
+  rules:
+    - host: nologin.issessions.ca
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: login-mia
+                port:
+                  number: 9000

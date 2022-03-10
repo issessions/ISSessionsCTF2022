@@ -1,0 +1,3 @@
+Did you know that Monkey Island has no national flag? Anyways, here's a PCAPNG file.<br><br>
+Flag Format:<br>
+monkeyCTF{Insert_Flag_Here}

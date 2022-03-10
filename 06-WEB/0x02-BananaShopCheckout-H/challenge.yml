@@ -1,0 +1,25 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: banana.issessions.ca/checkout
+description: We have been ALERTed that our checkout page is also vulnerable!! Could
+  you please confirm whether it is a false positive or not?<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{x55_c0u1d_b3_much_m0r3_dang3r0u5}
+hints:
+- content: 1. What is XSS?<br>2. How do you trigger an JavaScript alert?
+  cost: 0
+name: BananaShop Checkout
+requirements:
+- CoC
+- BananaShop Login
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

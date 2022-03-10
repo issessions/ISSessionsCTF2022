@@ -1,0 +1,1 @@
+monkeyCTF{dont_execute_unsanitized_input}

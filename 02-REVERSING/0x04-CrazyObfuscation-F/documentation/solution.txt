@@ -1,0 +1,15 @@
+
+
+
+create a c program and copy over the maomlYyBU:{KpckrTWaqjYrSiUnHu=s password stored 
+
+Func1-4 do not do anything, and can be ignored.
+
+Func5 can be reversed. They should put int bananananana= (i%4<<3)^2>>4<<2>>1^4 into a compiler to see what it does.
+They will be able to see that this simply goes from 4,12,20,28.
+
+Copy over the functions that related, 0x04, 0x14, 0x0c, 0x1c, and reverse them.
+
+It should print out monkeyCTF{LooksScarierThanItIs
+
+They should be able to guess the last character is a }

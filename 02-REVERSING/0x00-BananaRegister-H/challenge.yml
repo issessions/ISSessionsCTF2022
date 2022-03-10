@@ -1,0 +1,24 @@
+attempts: 0
+author: Minh Giang
+category: REVERSING
+connection_info: nc challenges.issessions.ca 5200
+description: HMMMMM... I FORGET MY PASSWORD!! How can I possibly look at my flag now?
+  <br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- BananaRegister.zip
+flags:
+- monkeyCTF{5h1ft1ng_15_t00_w3ak}
+hint_cost: 0
+name: BananaRegister
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

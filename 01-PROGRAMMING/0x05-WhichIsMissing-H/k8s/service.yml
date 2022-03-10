@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: which-is-missing
+  labels:
+    app: which-is-missing
+spec:
+  ports:
+    - name: tcp-port
+      port: 6666
+  selector:
+    app: which-is-missing

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: which-is-missing
+  labels:
+    app: which-is-missing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: which-is-missing
+  template:
+    metadata:
+      labels:
+        app: which-is-missing
+    spec:
+      containers:
+        - name: which-is-missing
+          image: gcr.io/issessions/whichismissing
+          ports:
+            - containerPort: 6666
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            privileged: true
+          imagePullPolicy: Always

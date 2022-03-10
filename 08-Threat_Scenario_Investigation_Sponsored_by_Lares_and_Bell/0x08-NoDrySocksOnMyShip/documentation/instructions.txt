@@ -1,0 +1,12 @@
+Question #08:
+------------
+
+The attacker establishes a SOCKS proxy tunnel back to a server they control in order to reach hosts on the internal network. What is the IP address of the server with which the attacker establishes this tunnel? 
+
+ANSWER FORMAT: monkeyCTF{IpAddress}
+EXAMPLE ANSWER: monkeyCTF{1.2.3.4}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

@@ -1,0 +1,27 @@
+attempts: 0
+author: Connor Laidlaw
+category: PWN
+connection_info: nc challenges.issessions.ca 5700
+description: Upon walking into the market square, you notice a dimly lit shop with
+  a brightly coloured sign reading:<br>"Red Banana! Green Banana! Orange Banana...
+  and THE banana!"<br>Confused, you enter the establishment to be greeted by noone
+  save for a self-serve kiosk. Hopefully they have good stuff?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{always_check_edge_cases}
+hints:
+- content: Notice that 2 of the options have restrictions on what you can enter while
+    a third one does not... Lower restriction input is always a good place to start.
+  cost: 0
+name: BananaShop
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

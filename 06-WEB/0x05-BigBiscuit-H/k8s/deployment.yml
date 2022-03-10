@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: big-biscuit
+  labels:
+    app: big-biscuit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: big-biscuit
+  template:
+    metadata:
+      labels:
+        app: big-biscuit
+    spec:
+      containers:
+      - name: big-biscuit
+        image:  gcr.io/issessions/bigbiscuit-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

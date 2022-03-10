@@ -1,0 +1,29 @@
+attempts: 0
+author: Connor Laidlaw
+category: WEB
+connection_info: account.issessions.ca
+description: Ok, we think we fixed the login screen bug you found earlier, but now
+  we've implemented a registration function.<br><br>It's pretty secure I think, no
+  way for them to get big banana access.<br><br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- AccountCreation.zip
+flags:
+- monkeyCTF{account_creation_injection}
+hints:
+- content: 1. There is no admin account in the database.<br>2. Check the db.sql file,
+    and try to understand what the users table looks like. <br>3. The injection is
+    not in the login screen.
+  cost: 0
+name: BananaShop No admin account?
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

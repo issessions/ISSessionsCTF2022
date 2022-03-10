@@ -1,0 +1,36 @@
+attempts: 0
+author: cupojavajoe
+category: REVERSING
+description: Based on the code provided, figure out what input would generate a Success
+  message. That's the flag!<br>If you find multiple possible answers, just choose
+  one.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- PuzzleMaze1.zip
+flags:
+- monkeyCTF{DB2D220}
+- monkeyCTF{DB323C0}
+- monkeyCTF{DB3C010}
+- monkeyCTF{DB3C320}
+- monkeyCTF{DB3CDC0}
+- monkeyCTF{DCDB3C0}
+- monkeyCTF{DB233C0}
+- monkeyCTF{DBAB3C0}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>The "v4" variable seems to be a very
+    long array at first glance, but the command() function only ever changes its referencing
+    index, the "v3" in 1, 2, 10, or 20 increments.<br>Maybe the "v4" variable can
+    also be represented as a 2D array to help you visualize the solution...<br>
+  cost: 0
+name: Puzzle Maze 1
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

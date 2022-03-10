@@ -1,0 +1,36 @@
+attempts: 0
+author: Louai/Kurt
+category: 'Threat Scenario Investigation: Sponsored by Lares and Bell'
+connection_info: https://bit.ly/3KhG71M
+description: 'Question #10:<br>------------<br><br>Defenders at Monkey Island security
+  were able to recover the LSASS dump file the attacker created (attached). They are
+  worried that the credentials of the Domain Administrator account ("harambe") were
+  compromised as he was logged into Win2019 when the dump occured. They want to know
+  if you can find harambe''s NT password hash in the dump file. What is harambe''s
+  NT hash?<br><br>ANSWER FORMAT: monkeyCTF{NTPasswordHashOfHarambe} (All lowercase.)<br>EXAMPLE
+  ANSWER: monkeyCTF{787a6994b59bbdf146616547b326fa71}<br><br>**IMPORTANT**<br>All
+  relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb
+  25, 2022 @ 00:20:00.000   (EST)<br>It is important to note that the timezone above
+  are in EST. If you machine is not in EST you will have to adjust the above times
+  to your equivalent time zone.<br>You will know that you are looking at the correct
+  period if there are 1,000,151 logs.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Harambe.zip
+flags:
+- monkeyCTF{787a6994b59bbdf146616547b326fa71}
+hints:
+- content: In Windows, NT password hashes are effectively equivalent to passwords
+    and can be used for authentication using Windows APIs.
+  cost: 0
+name: 10-Harambe
+requirements:
+- CoC
+- Monkey Dumplings
+state: visible
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,4 @@
+CHALLENGE HINTS:
+----------------
+1. What is a UNION attack?
+2. Would determining the number of columns returned be useful?

@@ -1,0 +1,1 @@
+5 bananas unicode🍌🍌🍌🍌🍌 <-- In case this does not show up properly due to encodings, the solution should be 5 banana emojis.

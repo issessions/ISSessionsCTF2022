@@ -1,0 +1,24 @@
+attempts: 0
+author: Connor Laidlaw
+category: WEB
+connection_info: order.issessions.ca
+description: Nice find!!! We think we have the final version of our product, we're
+  sure everything is secure this time!
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{secondordersqlinjection}
+hints:
+- content: Sometimes, an injection occurs in a later statement.
+  cost: 0
+name: BananaShop Order of Two
+requirements:
+- CoC
+state: visible
+tags:
+- hard
+type: dynamic
+value: 100
+version: '0.1'

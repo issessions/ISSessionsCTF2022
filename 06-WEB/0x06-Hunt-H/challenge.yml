@@ -1,0 +1,23 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: hunt.issessions.ca
+description: The flag blew up and scattered across our app. Help us locate the pieces!<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{scavenger_hunt_good_job}
+hints:
+- content: Looks like those creepy crawlers ran away with a flag segment.
+  cost: 0
+name: Hunt
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

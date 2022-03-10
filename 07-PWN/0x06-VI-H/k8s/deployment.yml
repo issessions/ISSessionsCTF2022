@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vi
+  labels:
+    app: vi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vi
+  template:
+    metadata:
+      labels:
+        app: vi
+    spec:
+      containers:
+        - name: vi
+          image: gcr.io/issessions/vi
+          ports:
+            - containerPort: 22
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            readOnlyRootFilesystem: true

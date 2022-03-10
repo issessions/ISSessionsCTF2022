@@ -1,0 +1,3 @@
+Due to a number of insect-related cases involving produce, the monkeys have decided to hire you to create a system that is able to detect nasty critters during food sorting!
+
+Can you effectively get rid of all the insects without taking too long or ruining perfectly good food?

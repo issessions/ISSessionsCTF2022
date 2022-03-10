@@ -1,0 +1,26 @@
+attempts: 0
+author: Minh Giang
+category: CRYPTOGRAPHY
+description: We found a log file that doesn't make much sense to us. It seems to be
+  a keylogger that created this file. <br>Maybe you can figure it out.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Keylogger.zip
+flags:
+- monkeyCTF{TROPICALPINEAPPLECOCONUTSMOOTHIE}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>How did people used to text back
+    in the old days?
+  cost: 0
+name: Keylogger
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

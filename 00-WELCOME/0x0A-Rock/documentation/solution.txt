@@ -1,0 +1,5 @@
+The intent of this challenge is to practice with fundamental Linux commands, identify these useful resources, and to highlight rockyou.txt as a particularly useful wordlist for everyday use. To begin, students should download and set up a Kali Linux VM: 
+Virtualbox: https://www.virtualbox.org/ 
+Kali 64-bit VM: https://kali.download/virtual-images/kali-2021.4a/kali-linux-2021.4a-virtualbox-amd64.ova
+Kali installation in VirtualBox: https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/
+Simple research into wordlists in Kali should produce functional search results, but ideally lead to https://www.kali.org/tools/, wherein they should be able to find the wordlists package: 

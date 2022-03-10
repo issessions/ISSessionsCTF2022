@@ -1,0 +1,1 @@
+Buffer overflow! This is an easy example, start by determining the buffer size. Look up a guide on how you could try to make the program call the function that is never reached.

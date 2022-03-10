@@ -1,0 +1,9 @@
+1. The only emoji that is consistently on each line is the peanut
+
+2. Each line is 16 characters long, indicating hex 0-F
+
+3. Based on the column of the peanut, get each hex character
+
+4. Convert hex string -> decimal string
+
+5. Flag is revealed

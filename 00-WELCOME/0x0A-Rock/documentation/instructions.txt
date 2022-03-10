@@ -1,0 +1,3 @@
+Kali Linux comes pre-configured with several useful tools for use with password related tools and attacks. Research these tools and find out where the wordlists are stored by default. 
+Identify the biggest password wordlist included by default - how many passwords (lines) are present in the wordlist? 
+The flag format is MonkeyCTF{filename_bignumberhere}

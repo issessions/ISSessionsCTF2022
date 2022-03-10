@@ -1,0 +1,6 @@
+The vulnerability is through finding out that ms!monkeydo uses Cowsay, a command line tool.
+After playing around with it, try to find out how to inject command line code.
+
+1. ms!monkeydo "; ls"
+2. Navigate directories and find "flag.txt"
+3. Read flag.txt

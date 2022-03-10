@@ -1,0 +1,22 @@
+attempts: 0
+author: Mandiant
+category: FORENSICS
+description: The hackermonkeys.com developer is known to make mistakes with his coding
+  skills; can you find anything on the internet he may have accidentally leaked?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{8vfvwf3kaw4vxcz41d78vzxrltv73cw0}
+hint_cost: 0
+name: 'Mandiant: Leaked Sensitive Info'
+requirements:
+- CoC
+state: visible
+tags:
+- hard
+- OSINT
+type: dynamic
+value: 100
+version: '0.1'

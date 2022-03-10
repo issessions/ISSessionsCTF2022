@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: getting-privs
+  labels:
+    app: getting-privs
+spec:
+  ports:
+    - name: tcp-port
+      port: 22
+  selector:
+    app: getting-privs

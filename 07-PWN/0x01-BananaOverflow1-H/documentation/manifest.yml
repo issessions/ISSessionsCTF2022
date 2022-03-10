@@ -1,0 +1,55 @@
+#####################################
+# CTFd PARAMETERS
+#####################################
+challenge:
+  # challenge name as it should appear to the players - required - 20 characters max
+  name: "BananaOverflow1"
+
+  # challenge author - required
+  author: Connor Laidlaw
+
+  # challenge category as it should appear to the players - required - 20 characters max
+  category: PWN
+
+  # standard or dynamic
+  type: dynamic
+
+  # initial challenge value
+  value: 100
+
+  extra: 
+    # This is the lowest that the challenge can be worth
+    minimum: 30
+    # The amount of solves before the challenge reaches its minimum value
+    decay: 30
+    initial: 100
+
+  # hint_cost if a hint is provided for the challenge - if not remove key
+  hint_cost: 0
+
+  # All viable solutions to a challenge (i.e. what the student enters in 
+  # CTFd) - in depth explanations of the solution should be placed in 
+  # documentation/solution.txt. Flags are case-sensitive but can be 
+  # made case-insensitive through the CTFd GUI.
+  flags:                              
+    - monkeyCTF{BufferOverflowIsEasy}
+
+  # helpful tags to focus the player's attention
+  tags:               
+    - medium
+
+  # hidden or visible - better to keep hidden by default
+  state: visible
+
+  # Version of the specifications for yml file
+  version: "0.1"
+
+  # dependencies on other challenges - dependencies must be deployed before current challenge.
+  requirements:                       
+   - 'CoC'
+
+  # Number of attempts - 0 attempts = infinite attempts
+  attempts: 0
+  
+  #Specifying where to connect to
+  connection_info: nc challenges.issessions.ca 5701

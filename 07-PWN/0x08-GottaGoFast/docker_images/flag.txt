@@ -1,0 +1,1 @@
+monkeyCTF{signals_go_brrrrrrrrrrrrr}

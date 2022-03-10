@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pest-patrol
+  labels:
+    app: pest-patrol
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pest-patrol
+  template:
+    metadata:
+      labels:
+        app: pest-patrol
+    spec:
+      containers:
+      - name: pest-patrol
+        image:  gcr.io/issessions/pestpatrol
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

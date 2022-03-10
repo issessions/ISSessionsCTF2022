@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: account-creation
+  labels:
+    app: account-creation
+spec:
+  ports:
+    - name: http-port
+      port: 5000
+  selector:
+    app: account-creation

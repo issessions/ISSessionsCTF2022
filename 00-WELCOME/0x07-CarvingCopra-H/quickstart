@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build -t dlayers docker_images/
+sudo docker run -it --privileged -p 22:22 --hostname monkey --rm dlayers

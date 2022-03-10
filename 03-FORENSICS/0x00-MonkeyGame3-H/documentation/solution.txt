@@ -1,0 +1,22 @@
+===SOLUTION 1===
+1. Make a copy of the file
+2. Extract "vbaproject.bin"
+3. Replace 'DPB' with 'DPx'
+4. Enter the file and let Word overwrite the macro password
+5. Go to the developer -> macro setting
+6. Uncomment the Agent-String and turn Mode to 0
+7. Sniff network traffic
+8. Decode secret in JSON file -> jpg
+9. Use stego methods to reveal zip password
+10. Open word in a ZIP program
+11. Find and extract "secret.zip"
+12. Use the decoded string as the password for secret.zip
+13. Find flag in 'flag.txt'
+
+===SOLUTION 2===
+1. Extract the vbaProject.bin file (or any application that can grab macros)
+2. Use Curl to make a web request using the user-agent string
+3. Repeat steps 7+ in Solution 1
+
+===FLAG===
+monkeyCTF{th15_15_n0t_a_n3tfl1x_r3f3r3nc3}

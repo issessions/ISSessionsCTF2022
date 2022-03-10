@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo chown root.root flag.txt
+sudo chmod 400 flag.txt
+sudo chown root.root gottagofast
+sudo chmod 4755 gottagofast

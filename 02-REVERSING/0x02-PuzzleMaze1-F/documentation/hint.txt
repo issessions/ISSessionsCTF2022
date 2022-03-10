@@ -1,0 +1,4 @@
+CHALLENGE HINT:
+---------------
+The "v4" variable seems to be a very long array at first glance, but the command() function only ever changes its referencing index, the "v3" in 1, 2, 10, or 20 increments.
+Maybe the "v4" variable can also be represented as a 2D array to help you visualize the solution...

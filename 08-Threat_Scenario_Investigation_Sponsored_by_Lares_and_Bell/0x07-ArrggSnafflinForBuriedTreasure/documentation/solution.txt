@@ -1,0 +1,1 @@
+ANSWER: monkeyCTF{roronoazoro:i<3luffy:5-exampledeploysilent.ps1}

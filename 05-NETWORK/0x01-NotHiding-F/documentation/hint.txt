@@ -1,0 +1,3 @@
+CHALLENGE HINT:
+---------------
+There're a lot of HTTP packets in the pcap. I wonder if you can find anything important in the packets' payloads...

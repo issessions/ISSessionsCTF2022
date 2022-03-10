@@ -1,0 +1,3 @@
+Break it down piece by piece, maybe some of the functions are cancelled out or simply are never used? 
+
+Maybe try pasting pieces into a compiler and see what they result in.

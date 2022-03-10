@@ -1,0 +1,8 @@
+1. Using strings
+strings -n 8 string_me_along.txt
+(reassemble file)
+
+2. Using RegEx
+.{8,}
+
+NOTE: There are probably a whole bunch of ways to solve this question, but these 2 are going to be the main ones used.

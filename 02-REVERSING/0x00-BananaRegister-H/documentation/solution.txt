@@ -1,0 +1,22 @@
+CHALLENGE SOLUTION:
+-------------------
+First reverse the list, then subtract the value by it's index. 
+This should return the password, enter the password into the program.
+
+Passsword: sillylittlemonkeyonatree
+
+When the program says "Enter your choice:", enter f.
+
+FLAG: monkeyCTF{5h1ft1ng_15_t00_w3ak}
+
+
+PYTHON SOLUTION:
+----------------
+pass = [124, 123, 135, 136, 116, 128, 128, 137, 116, 121, 123, 123, 120, 111, 117, 124, 123, 111, 113, 125, 111, 110, 106, 115]
+
+pass.reverse()
+
+for i in range(len(pass)):
+    pass[i] = chr(pass[i] - i)
+
+print("".join(pass))

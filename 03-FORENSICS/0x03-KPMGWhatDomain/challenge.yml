@@ -1,0 +1,29 @@
+attempts: 0
+author: Todd Brecher
+category: FORENSICS
+description: There has been a huge incident! A master hacker has broken into the environment
+  and deployed malware everywhere. The incident response team has extracted a sample,
+  but they need your help to specific characteristics to block its internet communications.<br>The
+  incident response team has asked you to investigate what domain the malware communicates
+  with. <br>The flag format is MonkeyCTF{domain.tld}
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- KPMGWhatDomain.zip
+flags:
+- monkeyCTF{iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com}
+hints:
+- content: 'You might find looking at the network connections or the Assembly code
+    for Internet Connection functions useful. '
+  cost: 0
+name: 'KPMG: What Domain'
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

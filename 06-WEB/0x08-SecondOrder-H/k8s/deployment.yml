@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: second-order
+  labels:
+    app: second-order
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: second-order
+  template:
+    metadata:
+      labels:
+        app: second-order
+    spec:
+      containers:
+      - name: second-order
+        image:  gcr.io/issessions/secondorder-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

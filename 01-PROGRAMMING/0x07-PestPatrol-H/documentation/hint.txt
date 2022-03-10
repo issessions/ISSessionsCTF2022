@@ -1,0 +1,1 @@
+Try seeing how your programming language of choice supports unicode characters like emojis.

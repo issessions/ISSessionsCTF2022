@@ -1,0 +1,1 @@
+Simply open the program in ghidra. They will notice there is a FLAGHERE function, containing 20 number represented in hexadecimal or decimal (depending on how ghidra decompiled) characters. Convert these to ascii to retrieve the flag.

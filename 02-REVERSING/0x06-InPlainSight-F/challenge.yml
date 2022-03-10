@@ -1,0 +1,26 @@
+attempts: 0
+author: lulucadi
+category: REVERSING
+description: Find the password to unlock the binary and obtain the flag!<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- InPlainSight.zip
+flags:
+- monkeyCTF{C4N_5TR1NG}
+- "monkeyCTF{C4N_5TR1NG\uFFFD}"
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>There must be a way to string the
+    answer together...
+  cost: 0
+name: In Plain Sight
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '1.0'

@@ -1,0 +1,9 @@
+1. Use ROT13 to decrypt string = monkeyCTF
+
+2. Use Vigenere Cipher with the key (monkeyCTF) to decrypt string = multi
+
+3. Use Columnar Transposition Cipher with the key (multi) to decrypt string = cipher
+
+4. Use Playfair Cipher with the key (cipher) to decrypt string = encryption
+
+FLAG: monkeyCTF{multi_cipher_encryption}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Banana
+{% endblock %}
+
+{% block main %}
+    {% for i in range(size) %}
+        <form action="/checkout" method="get">
+            <div class="product">
+                <div class="card mb-3" style="max-width: 50vw;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../static/images/{{ b[i][3] }}.jpg" alt="" width="300" height="300">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h3 class="card-title">{{ b[i][1] }}</h3>
+                        <p class="card-text">{{ b[i][2] }}</p>
+                        <p class="card-text">{{ b[i][2] }}</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer container">
+                        <div class="row">
+                            <div class="col stock">
+                                <small class="text-muted">Price: {{ b[i][4] }}</small>
+                            </div>
+                            <div class="col stock">
+                                <small class="text-muted">Stock: {{ b[i][5] }}</small>
+                            </div>
+                            <div class="col stock">
+                                <button type="submit" class="btn btn-warning">Buy now</button>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </form>
+    {% endfor %}
+{% endblock %}

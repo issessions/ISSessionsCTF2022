@@ -1,0 +1,27 @@
+attempts: 0
+author: Cristian
+category: PROGRAMMING
+connection_info: nc challenges.issessions.ca 5107
+description: Due to a number of insect-related cases involving produce, the monkeys
+  have decided to hire you to create a system that is able to detect nasty critters
+  during food sorting!<br><br>Can you effectively get rid of all the insects without
+  taking too long or ruining perfectly good food?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{cr3ppy_cr4wl3r5_sh411_n0t_p455}
+hints:
+- content: Try seeing how your programming language of choice supports unicode characters
+    like emojis.
+  cost: 0
+name: Pest Patrol
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

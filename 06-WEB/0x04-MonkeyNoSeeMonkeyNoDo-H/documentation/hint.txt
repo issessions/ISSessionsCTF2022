@@ -1,0 +1,3 @@
+How do post parameters work? Can you add one on your own?
+
+Can you try to trigger an error in a post parameter?

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Set required env
+export FLASK_APP=app.py
+export FLASK_ENV=development
+
+## Start
+flask run

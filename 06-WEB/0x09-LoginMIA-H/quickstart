@@ -1,0 +1,13 @@
+#! /bin/bash
+
+if [ $# -lt 2 ]
+then
+  echo "You must enter an IP and a Port! Usage: quickstart.sh <IP> <PORT>"
+  exit 1
+fi
+
+export APP_IP="$1"
+export APP_PORT="$2"
+
+# Deploy the Containers
+docker-compose up -d

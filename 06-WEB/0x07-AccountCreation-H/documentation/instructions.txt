@@ -1,0 +1,4 @@
+Ok, we think we fixed the login screen bug you found earlier, but now we've implemented a registration function.
+
+It's pretty secure I think, no way for them to get big banana access.
+

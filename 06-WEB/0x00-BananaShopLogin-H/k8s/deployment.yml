@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banana-shop-login
+  labels:
+    app: banana-shop-login
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banana-shop-login
+  template:
+    metadata:
+      labels:
+        app: banana-shop-login
+    spec:
+      containers:
+      - name: banana-shop-login
+        image:  gcr.io/issessions/bananashoplogin-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

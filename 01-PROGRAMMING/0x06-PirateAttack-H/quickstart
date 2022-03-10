@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t pirateattack docker_images/
+docker run --rm --privileged -p 6666:6666 pirateattack

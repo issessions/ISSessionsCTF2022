@@ -1,0 +1,27 @@
+attempts: 0
+author: Mandiant
+category: FORENSICS
+description: Be Careful what you Click on:<br><br>A hacker monkey sent the professor
+  an email looking for work. Our unsuspecting professor trusted the hacker monkey
+  and opened the email. Can you find what the evil monkey said to the professor?<br><br>The
+  email was not saved to the filesystem, so you will need to look somewhere else!<br><br>On
+  a Windows system (or Virtual Machine), download the Forensics Analysis tool Redline
+  (https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf) and the infected
+  system (https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr). <br><br>Using
+  Redline, load the infected system, find your evidence and the flag!
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{7jpwowRVjk9xKIShd35vef3KMyqFoVlm}
+hint_cost: 0
+name: 'Mandiant: Be Careful What You Click On!'
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

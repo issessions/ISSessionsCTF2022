@@ -1,0 +1,5 @@
+A tool like pwntools would be helpful to connect to the NC using code.
+
+Once you've done that, you'll need to split the line given you into more manageable chunks so you can perform mathematical operations.
+
+There will only be addition and subtraction, so you don't need to worry about BEDMAS rules. 

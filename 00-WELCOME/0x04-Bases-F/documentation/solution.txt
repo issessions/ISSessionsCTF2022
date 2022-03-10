@@ -1,0 +1,7 @@
+Part 1: base 64 decodes to:  monkeyCTF{
+
+Part 2: base 32 decodes to: base
+
+Part 3: base 62 decoes to: _encodings
+
+Part 4: base 85 decodes to: _are_important}

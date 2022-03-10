@@ -1,0 +1,3 @@
+Another maze. The flage is the input required for you to get a success message from the program!
+Provided below is the source code.
+Note: There maybe be multiple solutions, but correct flag is the shortest one.

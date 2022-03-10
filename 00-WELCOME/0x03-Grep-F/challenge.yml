@@ -1,0 +1,25 @@
+attempts: 0
+author: Connor Laidlaw
+category: WELCOME
+description: The monkey's have stolen the key and placed it in a long string. Can
+  you help me find it?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Grep.zip
+flags:
+- monkeyCTF{gRePiSgOoD}
+hints:
+- content: Look up how the "grep" command works!
+  cost: 0
+name: Grep
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

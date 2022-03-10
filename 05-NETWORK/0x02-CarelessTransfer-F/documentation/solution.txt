@@ -1,0 +1,10 @@
+CHALLENGE SOLUTION:
+-------------------
+Opening the pcap in Wireshark, you can see a series of FTP and TCP packets.
+Following the FTP trail, you will find the STOR printflag.py request.
+Below the request,there will be a FTP-DATA packet containing the relevant file.
+Right-click > Follow > TCP Stream
+The opened window will show a python script. If plaintext is not visible, go to the bottom of th window > Show data as > ASCII
+Save as... > Run the python script to retrieve flag.
+
+FLAG: monkeyCTF{Extr4cting_FTP}

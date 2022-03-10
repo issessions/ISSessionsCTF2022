@@ -1,0 +1,44 @@
+Each log is extremely repetitive.
+-------------------------------------
+Jan 1 2020 12:00
+Action: Door Release - Lunch
+	-DoorID: 7500
+	-Manufacturer: IronPrimate
+	-ProductID: AutoGuard 3500
+UniqueID: k010120201200
+PrisonerName: Koba
+-------------------------------------
+
+Valid DoorID:
+-Koba = 7500
+-Thade = 7501
+-Zaius = 7502
+
+Valid Actions & Times:
+8:00 - Door Release - Breakfast
+8:30 - Door Lock - Breakfast
+9:00 - Door Release - Physical Activity
+11:30 - Door Lock - Physical Activity
+12:00 - Door Release - Lunch
+12:30 - Door Lock - Lunch
+13:30 - Door Release - Recreation
+15:30 - Door Lock - Recreation
+18:30 - Door Release - Dinner
+19:00 - Door Lock - Dinner
+20:00 - Door Release - Shower
+20:30 - Door Lock - Shower
+
+PrisonerName: Koba, Zaius, Thade
+
+Koba = Improper Action (Action = "Special Permission" - k20207211900)
+Thade = Improper DoorID (DoorID = 2236 - t20212161130)
+Zaius = Invalid Time (Time = 23:15 - z20218272315)
+
+Can use either RegEx or a script to discover the above anomalies.
+i.e. Negative match for "Door Release/Lock": Action: ((?!(Door Release|Door Lock)).)*$
+
+k20207211900
+t20212161130
+z20218272315
+
+monkeyCTF{k20207211900_t20212161130_z20218272315}

@@ -1,0 +1,6 @@
+The web app only returns blog entries, however, our target is a password. We tried SQL injections but we don't think the app is vulnerable because it doesn't return any errors. Any ideas on how to get their password?
+
+TECHNICAL NOTES:
+
+The password is only 8, lowercase ascii characters. 
+

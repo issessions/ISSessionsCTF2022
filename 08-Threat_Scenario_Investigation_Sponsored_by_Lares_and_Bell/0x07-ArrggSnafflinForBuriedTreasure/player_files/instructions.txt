@@ -1,0 +1,12 @@
+Question #07:
+------------
+
+The attacker also searches for credentials in SMB shares. Based on a file retrieved from the compromised machine (attached), they appear to be using a tool called Snaffler (https://github.com/SnaffCon/Snaffler) to "snaffle" credentials. What is the username and the password of the second account they compromise (after monkeydluffy)? In what file does the attacker find these credentials?
+
+ANSWER FORMAT: monkeyCTF{Username:Password:FilenameWithExtension} (All lowercase. Username should not include domain name. Filename ONLY, not full path.)
+EXAMPLE ANSWER: monkeyCTF{masterroshi:i<3goku:bulmas_passwords.docx}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

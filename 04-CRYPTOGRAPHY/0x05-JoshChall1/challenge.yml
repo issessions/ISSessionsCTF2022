@@ -1,0 +1,25 @@
+attempts: 0
+author: Joshn Schneider
+category: CRYPTOGRAPHY
+description: '''01000111010101011010000001010011011100110100111001101110101111011001110001000110101101110011100000011110101010011001111010110110010111010111101110110000001010111011101010011111'''
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- JoshChall1.zip
+flags:
+- monkeyCTF{theflaghasbeencaptured}
+hints:
+- content: 26 are possible, but only 22 are shown.<br>The secret is hidden in the
+    remainders!
+  cost: 0
+name: Moderator Monkey
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

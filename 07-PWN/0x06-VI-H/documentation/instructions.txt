@@ -1,0 +1,1 @@
+We managed to retrieve SSH credentials, through a brute force attack. We know that the system was used to develop a login page for a startup. Try finding the password.

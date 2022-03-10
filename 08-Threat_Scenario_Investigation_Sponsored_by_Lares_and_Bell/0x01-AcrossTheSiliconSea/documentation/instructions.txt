@@ -1,0 +1,12 @@
+Question #01:
+------------
+
+Throughout your investigation, you realize that the attacker's malicious binary is communicating with multiple external hosts. What is the fully qualified domain name of the first host it ever communicates with? What network protocol (i.e. Command & Control (C2) channel) was used to establish this initial connection?
+
+ANSWER FORMAT: monkeyCTF{FullyQualifiedDomainNameOfC2Server:NameOfProtocol}
+EXAMPLE ANSWER: monkeyCTF{anon.issessions.ca:ftp}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

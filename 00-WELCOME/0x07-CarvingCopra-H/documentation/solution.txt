@@ -1,0 +1,11 @@
+1. sudo docker pull gcr.io/issessions-public/carvingcopra
+
+2. sudo docker images <--- used to get the image ID
+
+3. docker save [image ID] > [file_name].tar  **image ID = e4ad32a46ff4**
+
+4. tar xf [file_name].tar
+
+5. traverse the extracred directories while extracting layer.tar (tar xf layer.tar) to locate the flag.txt
+
+FLAG: monkeyCTF{layer_extraction}

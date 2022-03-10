@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banana-overflow1
+  labels:
+    app: banana-overflow1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banana-overflow1
+  template:
+    metadata:
+      labels:
+        app: banana-overflow1
+    spec:
+      containers:
+      - name: banana-overflow1
+        image:  gcr.io/issessions/bananaoverflow1
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

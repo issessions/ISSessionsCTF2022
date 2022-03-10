@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banana-register
+  labels:
+    app: banana-register
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banana-register
+  template:
+    metadata:
+      labels:
+        app: banana-register
+    spec:
+      containers:
+      - name: banana-register
+        image:  gcr.io/issessions/bananaregister
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

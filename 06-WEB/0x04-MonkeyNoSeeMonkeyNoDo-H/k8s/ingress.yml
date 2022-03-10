@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: monkey-no-see-monkey-no-do
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - monkey.issessions.ca
+      secretName: monkey-no-see-monkey-no-do-tls
+  rules:
+    - host: monkey.issessions.ca
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: monkey-no-see-monkey-no-do
+                port:
+                  number: 5000

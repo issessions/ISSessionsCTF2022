@@ -1,0 +1,26 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: hash.issessions.ca
+description: Seems like a SHA256 collision is used to authenticate users. Identify
+  the credentials to retrieve the flag.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- HashCollision.zip
+flags:
+- monkeyCTF{c0ndit0n_bypa55_n0t_c011i5ion5}
+hints:
+- content: Get request??? HuARRAY!
+  cost: 0
+name: HashCollision
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,30 @@
+attempts: 0
+author: Louai/Kurt
+category: 'Threat Scenario Investigation: Sponsored by Lares and Bell'
+connection_info: https://bit.ly/3KhG71M
+description: 'Question #02:<br>------------<br><br>What is the name of the scheduled
+  task the attacker used to persist on the system? How often does it run (in minutes)?
+  For how often it runs, use the Task Scheduler Time Interval format (https://docs.microsoft.com/en-us/windows/win32/taskschd/taskschedulerschema-interval-repetitiontype-element)?<br><br>ANSWER
+  FORMAT: monkeyCTF{TaskName:TaskSchedulerTimeIntervalFormat} (All uppercase.)<br>EXAMPLE
+  ANSWER: monkeyCTF{ISSESSIONCTFISATASKINGENDEAVOUR:PT5M}<br><br>**IMPORTANT**<br>All
+  relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb
+  25, 2022 @ 00:20:00.000   (EST)<br>It is important to note that the timezone above
+  are in EST. If you machine is not in EST you will have to adjust the above times
+  to your equivalent time zone.<br>You will know that you are looking at the correct
+  period if there are 1,000,151 logs.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{EWWWKURTL1KESP1NEAPPLESONP1ZZA:PT60M}
+hints:
+- content: See Windows Event ID 4698.
+  cost: 0
+name: 02-A Nefarious Task
+requirements:
+- CoC
+state: visible
+type: dynamic
+value: 100
+version: '0.1'

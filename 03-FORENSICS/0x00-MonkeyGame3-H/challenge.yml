@@ -1,0 +1,29 @@
+attempts: 0
+author: Cristian
+category: FORENSICS
+description: 'We''ve recently obtained a USB from an interception on a suspect''s
+  drop-point. In it, we found a single file that is believed to be used by a criminal
+  group with unknown origins.<br><br>As the suspect got away, this is currently our
+  only lead into the group - can we count on you to help us in our investigation?<br><br>Note:
+  If you overwrite the file, you may want to re-download it.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- MonkeyGame3.zip
+flags:
+- monkeyCTF{th15_15_n0t_a_n3tfl1x_r3f3r3nc3}
+hints:
+- content: We find it suspicious that this was the only file on the drive... but where
+    would they be able to hide other files?
+  cost: 0
+name: Monkey Game
+requirements:
+- CoC
+state: visible
+tags:
+- hard
+type: dynamic
+value: 100
+version: '0.1'

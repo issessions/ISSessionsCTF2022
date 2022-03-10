@@ -1,0 +1,21 @@
+Looking at the code, the program applies simple operations to the variable [pick] based on user input.
+
+Success is based on checking if all 32 bits of [pick] is set to 1.
+
+In order to have the shortest solution, the goal is to use the operations to make [pick] = 138840.
+	Afterwards, by applying the 1 operation: [pick] = 138840 - 138841 = -1.
+	This operation causes an integer underflow, setting all bits of [pick] to 1.
+Operations:
+	Start: [pick] = 0
+	2: [pick] = 0 + 5 = 5
+	7: [pick] = 5 * 11 = 55
+	4: [pick] = 55 + 61 = 116
+	6: [pick] = 116 * 7 = 812
+	4: [pick] = 812 + 61 = 873
+	8: [pick] = 873 * 53 = 46269
+	3: [pick] = 46269 + 11 = 46280
+	5: [pick] = 46280 * 3 = 138840 # One step away
+	1: [pick] = 138840 - 138841 = -1
+	E: Desired value is set, end session.
+
+FLAG: monkeyCTF{274648351E}

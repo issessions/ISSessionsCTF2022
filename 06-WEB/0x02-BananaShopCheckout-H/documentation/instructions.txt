@@ -1,0 +1,1 @@
+We have been ALERTed that our checkout page is also vulnerable!! Could you please confirm whether it is a false positive or not?

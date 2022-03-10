@@ -1,0 +1,1 @@
+In Windows, NT password hashes are effectively equivalent to passwords and can be used for authentication using Windows APIs.

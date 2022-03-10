@@ -1,0 +1,30 @@
+attempts: 0
+author: Connor Laidlaw
+category: REVERSING
+description: Realizing you haven't eaten in a while, you decide to find somewhere
+  you can get some grub.<br><br>Unfortunately, you don't have any of the local currency
+  so noone will sell you anything. <br><br>You decide to take a look at the back of
+  a grocery store to see if maybe theres a way you could break in?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- GroceryStoreRobbery.zip
+flags:
+- monkeyCTF{xor_is_its_own_inverse!}
+hints:
+- content: To make the code more readable, try using your IDE's beautify fucntion,
+    or use an online tool to do this.<br><br>The password has been transformed and
+    saved in the program somehow. What does the code do to compare user input with
+    the saved array? Can you reverse it?
+  cost: 0
+name: Grocery Store Robbery!
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

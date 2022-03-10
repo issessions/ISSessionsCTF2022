@@ -1,0 +1,27 @@
+attempts: 0
+author: Connor Laidlaw
+category: PWN
+connection_info: nc challenges.issessions.ca 5703
+description: Not having any money you can use here is starting to get pretty annoying,
+  fortunately <br>you come across what looks like an ATM machine. Maybe there's some
+  way you can get some currency after all?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{dont_execute_unsanitized_input}
+hints:
+- content: It looks like when you try to enter anything other than what the program
+    expects a calling erorr occurs... Maybe try googling to it to determine whats
+    going on behind the scenes.
+  cost: 0
+name: PWN The ABTM
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

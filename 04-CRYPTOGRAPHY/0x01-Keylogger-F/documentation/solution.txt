@@ -1,0 +1,8 @@
+CHALLENGE SOLUTION:
+-------------------
+Using the numebr pad from https://www.dcode.fr/phone-keypad-cipher, you can follow along with the log file. 
+Based on the number of times the key is  it produces a different letter, just like how people would type letters on the really old phones.
+
+You should look at the timings to differentiate between letters.
+
+FLAG: monkeyCTF{TROPICALPINEAPPLECOCONUTSMOOTHIE}

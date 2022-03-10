@@ -1,0 +1,44 @@
+CHALLENGE SOLUTION:
+-------------------
+Challenge can be solved by creating a script that parses through the log file. 
+After parsing, the script should return many lines of text and one of which will look like a password.
+
+FLAG: monkeyCTF{my_v3ry_s3cur3_pa55w0rd}
+
+PYTHON CODE SOLUTION:
+---------------------
+# Temporarily store keystrokes
+keystrokes = []
+
+with open ("log.txt", "r") as logs:
+    for line in logs:
+
+        if "Key.shift_r" in line:
+            continue
+
+        # Print line since end of line
+        if "Key.enter" in line:
+            # Skip events that ENTER button is randomly 
+            if len(keystrokes) == 0:
+                continue
+
+            print("".join(keystrokes))
+
+            # Clear out list
+            keystrokes.clear()
+            
+        elif "Key.space" in line:
+            keystrokes.append(" ")
+
+        elif "Key.backspace" in line:
+            if len(keystrokes) == 0:
+                continue
+            else:
+                # Remove backspace by popping list
+                keystrokes.pop()
+        
+        else:
+            # Appending data between ''
+            start = line.find("'") + 1
+            end = start + line[start:].find("'")
+            keystrokes.append(line[start:end])

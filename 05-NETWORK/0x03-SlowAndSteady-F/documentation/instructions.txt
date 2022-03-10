@@ -1,0 +1,2 @@
+The MuBit Quantum Computing Company recently found artifacts that suggest a breach in their network. However, their IDS did not capture any notable exfiltrations and the IT team could not locate any notable files being transmitted.<br><br>
+Are you able to find suspicious traffic leading to evidence of stolen materials?

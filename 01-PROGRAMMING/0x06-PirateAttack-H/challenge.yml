@@ -1,0 +1,29 @@
+attempts: 0
+author: Cristian
+category: PROGRAMMING
+connection_info: nc challenges.issessions.ca 5106
+description: A fleet of cyborg pirates threaten the monkey's fishing business! If
+  they are not stopped, they will strip the shore clean of all the fishes and their
+  habitat, making it impossible to feed their people. Unfortunately, the monkeys only
+  have one cannonball for each ship and the pirates are extremely fast. Are you able
+  to program a machine capable of identifying the ships on time and dispatching them
+  with no error?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{l00k_4t_m3_1_4m_th3_c4pt41n_n0w!!!}
+hints:
+- content: The key is in replicating the grid. It should either be a 2D array or runs
+    through it like one.<br>
+  cost: 0
+name: Pirate Attack
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,6 @@
+The first step would be to iterate through and determine the lowest and highest value, which we know will always not be missing.
+
+Next, maybe we could compare against the values we know should be in the list?
+
+Make sure you send your values back in the form: 9 2 1 8
+

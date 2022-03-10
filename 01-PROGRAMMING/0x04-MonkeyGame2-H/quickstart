@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t monkeygamepart2 docker_images/
+docker run --rm --privileged -p 6666:6666 monkeygamepart2

@@ -1,0 +1,21 @@
+Use SOCKET or PWNTOOLS to connect to the nc, then read the input. It could be put into eval and completed or you can iterate through and use a script such as seen in the solution.py.
+If you encounter a +, add the 2 numbers, a -, subtract the 2 numbers.
+
+Return the reslt
+
+Do this 500 times and get the flag
+
+SOLUTION SCRIPT
+
+split = test.split(" ")
+sumTotal = int(split[0])
+for x in range (1,len(split)-1,2):
+	print(split[x])
+	operator = split[x]
+	number = int(split[x+1])
+	if(operator =='+'):
+		sumTotal+= number
+	else:
+		sumTotal -=number
+
+print(sumTotal)

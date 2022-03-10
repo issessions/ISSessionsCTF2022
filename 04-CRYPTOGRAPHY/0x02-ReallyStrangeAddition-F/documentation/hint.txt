@@ -1,0 +1,1 @@
+Oh? If you look at the two functions, one of them looks an awful lot like an RSA encryption... Are there any ways to reverse it?

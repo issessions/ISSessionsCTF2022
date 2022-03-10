@@ -1,0 +1,12 @@
+On this challenge, there is an executable binary located in /usr/bin named gottagofast
+
+You can execute it from anywhere in connection, by simply typing gottagofast into terminal.
+
+There is a flag file located in the root folder, however you do not have permission to read it as a normal user.
+This is a binary exploitation challenge, you will have to exploit the gottagofast binary to have it read the flag for you somehow.
+
+You do not have to perform linux privilege escalation in any way.
+
+This is a war-game style challenge, meaning all players will be on the same SSH connection, so be careful when creating files! Cover your tracks! Other users CAN read your files.
+
+Good lucK!!!

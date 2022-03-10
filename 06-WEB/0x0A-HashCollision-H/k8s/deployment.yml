@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hash-collision
+  labels:
+    app: hash-collision
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hash-collision
+  template:
+    metadata:
+      labels:
+        app: hash-collision
+    spec:
+      containers:
+      - name: hash-collision
+        image:  gcr.io/issessions/hashcollision-php
+        ports:
+        - containerPort: 9000
+        resources:
+            requests:
+              cpu: 100m
+      

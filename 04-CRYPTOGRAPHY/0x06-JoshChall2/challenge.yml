@@ -1,0 +1,25 @@
+attempts: 0
+author: Joshn Schneider
+category: CRYPTOGRAPHY
+description: '''rtyeheairetrswxmveihlaseiuslndeuoeaintrvhtooorniurnoemsiywvyiemoaretutcieeesynvytuotowoyinldrwokiouirosetawlnhsahbdethteodytuoevorpeyeelulrsoyttlmduhhbeorfntiru'''
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- JoshChall2.zip
+flags:
+- monkeyCTF{thematrixiseverywhereitisallaroundusevennowinthisveryroomyoucanseeiteverytimeyoulookoutyourwindowitistheworldthathasbeenpulledoveryoureyestoblindyoufromthetruth}
+hints:
+- content: The dealer picked up the king of clubs.<br>Start with the eldest, go around,
+    look at the rankings, but ignore the kitty.
+  cost: 0
+name: Crypto 17
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

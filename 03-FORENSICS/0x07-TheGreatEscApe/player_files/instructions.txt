@@ -1,0 +1,6 @@
+The monkeys have been using a new automated prison system to keep members of a dangerous organization locked up.
+However, a recent site inspection has led to the discovery of 3 members escaping: Koba, Thade and Zaius. Due to the lack of physical damage, it is believed the prison system was hacked.
+Are you able to investigate the prison door logs for anomalies to help us pinpoint when each prisoner escaped?
+
+Flag Format:
+monkeyCTF{KobaUniqueID_ThadeUniqueID_ZaiusUniqueID}

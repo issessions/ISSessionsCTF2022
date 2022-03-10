@@ -1,0 +1,6 @@
+Enter:  Os.System("/bin/sh")
+		Os.System("cat flag.txt")
+		etc
+
+The exec() function is used on user input, which is an obvious security flaw. This means the users could input any OS function and run it, they could also simply cat flag.txt.
+They can figure this out by realizing if you type anything other than the predefined function names, a call name error will be thrown.

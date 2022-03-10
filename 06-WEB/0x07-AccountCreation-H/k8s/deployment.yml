@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: account-creation
+  labels:
+    app: account-creation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: account-creation
+  template:
+    metadata:
+      labels:
+        app: account-creation
+    spec:
+      containers:
+      - name: account-creation
+        image:  gcr.io/issessions/accountcreation-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

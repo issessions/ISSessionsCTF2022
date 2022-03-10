@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monkey-game3
+  labels:
+    app: monkey-game3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monkey-game3
+  template:
+    metadata:
+      labels:
+        app: monkey-game3
+    spec:
+      containers:
+      - name: monkey-game3
+        image:  gcr.io/issessions/monkeygame3
+        ports:
+        - containerPort: 8000
+        resources:
+            requests:
+              cpu: 100m
+      

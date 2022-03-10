@@ -1,0 +1,29 @@
+attempts: 0
+author: Cristian
+category: CRYPTOGRAPHY
+description: 'Some archeologists made a grand discovery, where they believe that they
+  have found cave paintings used by ancient civilizations! However, radiocarbon dating
+  suggests that this message is no more than a month old...<br><br>Are you able to
+  uncover the truth of these cave paintings?<br><br>Note: This challenge uses emojis,
+  so UTF-8/Unicode text readers are suggested for this challenge.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- CavePaintings.zip
+flags:
+- monkeyCTF{fr0m_p4st_2_pr3s3nt}
+hints:
+- content: Take very careful note of the emojis being used.
+  cost: 0
+name: Cave Paintings
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+- steganography
+type: dynamic
+value: 100
+version: '0.1'

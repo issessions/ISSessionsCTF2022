@@ -1,0 +1,21 @@
+attempts: 0
+author: Minh Giang
+category: PWN
+connection_info: nc challenges.issessions.ca 5704
+description: Escape the room and read the secret flag!<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{c0de_inj3cti0n_wa5_t00_3a5y}
+hint_cost: 0
+name: Escape Room
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

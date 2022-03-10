@@ -1,0 +1,1 @@
+ANSWER: monkeyCTF{c:\users\monkeydluffy\bananavpninstaller\bananavpninstaller.exe:7eece42170ff00ff8bc9e8c1cb7064ca}

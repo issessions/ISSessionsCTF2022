@@ -1,0 +1,13 @@
+SQL injection
+
+The injection is in the registration form. 
+
+By inspecting the db.sql file, players will notice there is a privilege column.
+
+While you cannot manually submit a privilege level in an account registration, the form itself is vulnerable to SQLi
+
+This means through what we assume the query to look like on the backend, if we inject some thing like:
+
+monkey', 'password',2)-- 
+
+into the username field, it will create an account called monkey, password of password, and privilege level of 2. Log in using the info to get the flag.

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gotta-go-fast
+  labels:
+    app: gotta-go-fast
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gotta-go-fast
+  template:
+    metadata:
+      labels:
+        app: gotta-go-fast
+    spec:
+      containers:
+        - name: gotta-go-fast
+          image: gcr.io/issessions/gottagofast
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 22
+          resources:
+            requests:
+              cpu: 100m
+          # securityContext:
+          #   privileged: true
+          #   readOnlyRootFilesystem: true

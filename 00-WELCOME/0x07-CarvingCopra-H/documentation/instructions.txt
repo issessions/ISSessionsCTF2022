@@ -1,0 +1,4 @@
+A file was added to the container, however was deleted right after (not sure why). 
+This file is very important, can you retrieve the file?
+
+Run 'docker pull gcr.io/issessions-public/carvingcopra' to get started.

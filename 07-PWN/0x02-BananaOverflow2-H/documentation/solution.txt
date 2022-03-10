@@ -1,0 +1,5 @@
+This is a simple bufferoverflow similar to the last one,
+
+Step 1) They should use some sort of pattern_create algorithm to determine the buffer size to set RSP. This is determined to be 22.
+Step 2) Create some sort of code, most easily pwntools python, to interact with the program. They will need to send info several times to the program before it lets them access the vulnerable function.
+Step 3) Send the exploit! p.sendline(b"A" * 22  + p64(e.sym['shhhhhbin']))

@@ -1,0 +1,11 @@
+TODO:
+-----
+1. Exercise
+2. Read 
+
+LOGIN PROJECT:
+--------------
+1. Create login page
+2. Test the login page
+3. Remove backdoor
+4. Deploy

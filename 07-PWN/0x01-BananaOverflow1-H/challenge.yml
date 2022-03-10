@@ -1,0 +1,28 @@
+attempts: 0
+author: Connor Laidlaw
+category: PWN
+connection_info: nc challenges.issessions.ca 5701
+description: If my banana bucket only holds 50 bananas, what happens when i put in
+  51?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- BananaOverflow1.zip
+flags:
+- monkeyCTF{BufferOverflowIsEasy}
+hints:
+- content: Buffer overflow! This is an easy example, start by determining the buffer
+    size. Look up a guide on how you could try to make the program call the function
+    that is never reached.
+  cost: 0
+name: BananaOverflow1
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

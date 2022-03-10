@@ -1,0 +1,27 @@
+attempts: 0
+author: cupojavajoe
+category: REVERSING
+description: 'Another maze. The flage is the input required for you to get a success
+  message from the program!<br>Provided below is the source code.<br>Note: There maybe
+  be multiple solutions, but correct flag is the shortest one.<br>'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- PuzzleMaze2.zip
+flags:
+- monkeyCTF{AB1A2FC}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>Have you solved Puzle Maze 1 yet?
+    The rules for the maze seems awfully similar, yet different...<br><br>
+  cost: 0
+name: Puzzle Maze 2
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

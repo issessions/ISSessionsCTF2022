@@ -1,0 +1,3 @@
+1. There is no admin account in the database.
+2. Check the db.sql file, and try to understand what the users table looks like. 
+3. The injection is not in the login screen.

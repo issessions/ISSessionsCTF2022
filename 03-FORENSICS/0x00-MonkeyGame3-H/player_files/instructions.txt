@@ -1,0 +1,5 @@
+We've recently obtained a USB from an interception on a suspect's drop-point. In it, we found a single file that is believed to be used by a criminal group with unknown origins.
+
+As the suspect got away, this is currently our only lead into the group - can we count on you to help us in our investigation?
+
+Note: If you overwrite the file, you may want to re-download it.

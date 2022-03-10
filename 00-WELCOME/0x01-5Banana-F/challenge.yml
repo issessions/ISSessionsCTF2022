@@ -1,0 +1,22 @@
+attempts: 0
+author: Connor Laidlaw
+category: WELCOME
+description: It's 5 banana's<br>Don't forget to put your answer inside of monkeyCTF{}
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- "monkeyCTF{\U0001F34C\U0001F34C\U0001F34C\U0001F34C\U0001F34C}"
+hints:
+- content: Is there a way you could type out a banana?
+  cost: 0
+name: 5Banana
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

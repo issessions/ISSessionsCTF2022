@@ -1,0 +1,10 @@
+On an Active Directory domain joined system this command will print out the flag. However, most people most likely will not run this on a domain joined computer and will have to perform manual steps to analyze the code.
+
+
+On a non-domain joined computer the script will not run.
+
+The player will need to first decode the main Powershell command:
+
+This leads to a Github Gist paste with another base64 encoded variable:
+
+This variable will then need to be decoded again and will provide the flag to the user:

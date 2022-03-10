@@ -1,0 +1,2 @@
+1. Run strings on the binary to obtain the password
+2. Run the binary and use the password obtained from the strings command to obtain the flag

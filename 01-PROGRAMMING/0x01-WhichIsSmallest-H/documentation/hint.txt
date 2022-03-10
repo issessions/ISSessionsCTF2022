@@ -1,0 +1,1 @@
+Look into a tool like pwntools so you can connect to the NC connection and use code to reply!

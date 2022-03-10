@@ -1,0 +1,26 @@
+attempts: 0
+author: Cristian
+category: WELCOME
+description: The "strings" command is very useful - however, it can also display a
+  lot of useless information if used incorrectly. Are you able to filter out the text
+  file to reveal the flag?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Strings.zip
+flags:
+- monkeyCTF{s1mpl3_c0mm4nd5_c4n_g0_4_v3ry_l0ng_w4y}
+hints:
+- content: Look up the "Strings" command, and it's various flags such as -n
+  cost: 0
+name: String Me Along
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

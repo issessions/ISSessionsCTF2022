@@ -1,0 +1,10 @@
+Fill out some basic information in the text fields
+
+The address text field is vulnerable to XSS. Based on the instructions, "ALERTed" is the hint.
+An alert needs to be triggered to get the flag
+
+Fill the address text field with:
+
+<sscriptcript>alert()</sscriptcript>
+
+FLAG: monkeyCTF{x55_c0u1d_b3_much_m0r3_dang3r0u5}

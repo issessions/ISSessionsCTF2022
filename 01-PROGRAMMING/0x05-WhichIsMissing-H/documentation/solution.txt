@@ -1,0 +1,40 @@
+The first step is to determine the lowest and highest values in the list, as they are always guaranteed to be missing.
+Subtract them to determine the range
+
+Afterwards, there are many ways, one being to create a list of the values that should exist and then
+compare it against the list read from the program. Any value not in your list is missing, and can therefore
+be concatenated into a string and sent back.
+
+== SAMPLE PYTHON SOLUTION ==
+from pwn import *
+
+def solve(s: str):
+    s = s.replace("[", "").replace("]", "").replace(",", "").replace("'", "").replace("\n", "")
+    l = s.split(" ")
+    base = []
+    for c in l:
+        if c != '*':
+            base.append(int(c))
+
+    base.sort()
+    print(base)
+
+    ans = []
+    for i in range(base[0] + 1, base[len(base) - 1]):
+        if i not in base:
+            ans.append(str(i))
+    return " ".join(ans)
+
+
+p = remote("localhost", 6666)
+
+p.readline()
+p.readline()
+p.readline()    
+
+while True:
+    x = p.readline().decode("utf-8")
+
+    ans = solve(x)
+
+    p.sendline(ans.encode("utf-8"))

@@ -1,0 +1,22 @@
+attempts: 0
+author: Minh Giang
+category: PWN
+connection_info: ssh monkey@challenges.issessions.ca -p 5707 [Password = monkey]
+description: HMM... I wonder how I can get my hands on the hashes located in the /root
+  directory.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{notsaltyhashlist}
+hint_cost: 0
+name: UID
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

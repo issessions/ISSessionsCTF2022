@@ -1,0 +1,26 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: banana.issessions.ca/emails?file=emails.txt
+description: People are apparently able to view my secret file located outside the
+  application. Could you figure out how that's possible?<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{j0urn3y_t0_th3_w35t}
+hints:
+- content: CHALLENGE HINTS:<br>----------------<br>1. What is directory traversal?<br>2.
+    ....// == ../../
+  cost: 0
+name: BananaShop Emails
+requirements:
+- CoC
+- BananaShop Login
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: causing-discord
+  labels:
+    app: causing-discord
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: causing-discord
+  template:
+    metadata:
+      labels:
+        app: causing-discord
+    spec:
+      containers:
+        - name: causing-discord
+          image: gcr.io/issessions/causingdiscord
+          imagePullPolicy: Always
+          # ports:
+          #   - containerPort: 22
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            privileged: true

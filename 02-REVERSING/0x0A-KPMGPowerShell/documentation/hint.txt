@@ -1,0 +1,1 @@
+It is common for powershell to contain Base64 encoded text. You may want to decode everything you find as you trace the source of what is executed. 

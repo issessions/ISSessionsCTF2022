@@ -1,0 +1,2 @@
+It's 5 banana's
+Don't forget to put your answer inside of monkeyCTF{}

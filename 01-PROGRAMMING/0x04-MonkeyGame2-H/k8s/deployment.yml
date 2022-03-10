@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monkey-game2
+  labels:
+    app: monkey-game2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monkey-game2
+  template:
+    metadata:
+      labels:
+        app: monkey-game2
+    spec:
+      containers:
+      - name: monkey-game2
+        image:  gcr.io/issessions/monkeygame2
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

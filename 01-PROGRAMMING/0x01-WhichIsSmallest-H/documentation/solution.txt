@@ -1,0 +1,1 @@
+Use a tool such as pwntools to connect to the NC, take the inputs and simply return the lowest value.

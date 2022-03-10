@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: which-is-smallest
+  labels:
+    app: which-is-smallest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: which-is-smallest
+  template:
+    metadata:
+      labels:
+        app: which-is-smallest
+    spec:
+      containers:
+        - name: which-is-smallest
+          image: gcr.io/issessions/whichissmallest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 6666
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            privileged: true

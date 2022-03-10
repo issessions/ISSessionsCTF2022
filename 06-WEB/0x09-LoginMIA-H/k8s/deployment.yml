@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login-mia
+  labels:
+    app: login-mia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: login-mia
+  template:
+    metadata:
+      labels:
+        app: login-mia
+    spec:
+      containers:
+      - name: login-mia
+        image:  gcr.io/issessions/loginmia-php
+        ports:
+        - containerPort: 9000
+        resources:
+            requests:
+              cpu: 100m

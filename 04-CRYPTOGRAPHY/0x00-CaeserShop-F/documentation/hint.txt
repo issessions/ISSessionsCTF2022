@@ -1,0 +1,1 @@
+Check out the website dcode and see if you can find an existing tool to decode this! Maybe the name of the challenge can help you determine what type of cipher it is.

@@ -1,0 +1,3 @@
+A hidden label was left behind by the attacker, can you locate it?
+
+Run 'docker pull gcr.io/issessions-public/carvingcopra' to get started.

@@ -1,0 +1,26 @@
+attempts: 0
+author: Connor Laidlaw
+category: REVERSING
+description: help
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- CrazyObfuscation.zip
+flags:
+- monkeyCTF{LooksScarierThanItIs}
+hints:
+- content: Break it down piece by piece, maybe some of the functions are cancelled
+    out or simply are never used? <br><br>Maybe try pasting pieces into a compiler
+    and see what they result in.<br>
+  cost: 0
+name: CrazyObfuscation
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

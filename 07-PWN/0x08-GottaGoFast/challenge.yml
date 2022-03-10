@@ -1,0 +1,31 @@
+attempts: 0
+author: Connor Laidlaw
+category: PWN
+connection_info: ssh -p 5708 monkey@challenges.issessions.ca [Password = monkey]
+description: On this challenge, there is an executable binary located in /usr/bin
+  named gottagofast<br><br>You can execute it from anywhere in connection, by simply
+  typing gottagofast into terminal.<br><br>There is a flag file located in the root
+  folder, however you do not have permission to read it as a normal user.<br>This
+  is a binary exploitation challenge, you will have to exploit the gottagofast binary
+  to have it read the flag for you somehow.<br><br>You do not have to perform linux
+  privilege escalation in any way.<br><br>This is a war-game style challenge, meaning
+  all players will be on the same SSH connection, so be careful when creating files!
+  Cover your tracks! Other users CAN read your files.<br><br>Good lucK!!!
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- GottaGoFast.zip
+flags:
+- monkeyCTF{signals_go_brrrrrrrrrrrrr}
+hint_cost: 0
+name: GottaGoFast Calculator!
+requirements:
+- CoC
+state: visible
+tags:
+- hard
+type: dynamic
+value: 100
+version: '0.1'

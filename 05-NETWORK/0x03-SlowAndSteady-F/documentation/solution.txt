@@ -1,0 +1,14 @@
+===Solution 1===
+1. Find and isolate the suspicious traffic [192.168.85.128] (I used the filter ip.addr==192.168.85.128 && frame.len > 100)
+2. Select all and export packet dissection to desired file type (I used JSON)
+3. Carve the hex data from the tcp payload of each packet (I made a quick script to do this)
+4. Convert from Hex x2 and save as PDF
+5. Open PDF and copy flag on front page
+
+===Solution 2===
+1. Identify the suspicious traffic
+2. Use Scapy to carve out the data and save to file
+3. Convert from Hex x2 and save as PDF
+4. Open PDF and copy flag on front page
+
+monkeyCTF{510w_4nd_5t34y_w1n5_th3_r4c3}

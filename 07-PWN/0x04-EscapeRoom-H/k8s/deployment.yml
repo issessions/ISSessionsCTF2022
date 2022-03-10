@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: escape-room
+  labels:
+    app: escape-room
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: escape-room
+  template:
+    metadata:
+      labels:
+        app: escape-room
+    spec:
+      containers:
+      - name: escape-room
+        image:  gcr.io/issessions/escaperoom
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

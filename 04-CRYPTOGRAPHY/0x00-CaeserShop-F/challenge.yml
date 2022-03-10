@@ -1,0 +1,29 @@
+attempts: 0
+author: Connor Laidlaw
+category: CRYPTOGRAPHY
+description: 'Welcome to Caesar Shop, the #1 hangout for Caeser fans!<br><br>Items
+  available:<br>Caesar salad, 10 bananas,<br>Caeser cocktail(no alcohol), 5 bananas,<br>Caeser
+  toga, 50 bananas,<br><br>Anyone who can figure out this hidden message and prove
+  themselves a true Caeser fan gets a secret prize!<br><br>hidden message: uwvsmgKBN{lkwlmqaikwwtaqbm}'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- CaeserShop.zip
+flags:
+- monkeyCTF{dcodeisacoolsite}
+hints:
+- content: Check out the website dcode and see if you can find an existing tool to
+    decode this! Maybe the name of the challenge can help you determine what type
+    of cipher it is.
+  cost: 0
+name: Caeser Shop
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

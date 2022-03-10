@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vi
+  labels:
+    app: vi
+spec:
+  ports:
+    - name: tcp-port
+      port: 22
+  selector:
+    app: vi

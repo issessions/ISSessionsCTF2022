@@ -1,0 +1,49 @@
+CHALLENGE SOLUTION:
+-------------------
+Unzip all archive with a script, example script down below.
+
+
+FLAG: monkeyCTF{hexstruction_recondump_zip}
+
+SCRIPT:
+-------
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then
+        exit
+fi
+
+START="$1"
+
+FILESTATE="$(file "$START" | cut -d' ' -f2 )"
+
+
+while [ "$FILESTATE" != "ASCII" ]
+do
+        NEXT="$(($START - 1))"
+        echo "Unzipping" "$FILESTATE" "$START"
+        if [ "$FILESTATE" = "gzip" ] || [ "$FILESTATE" = "Zip" ] || [ "$FILESTATE" = "Apple" ]
+        then
+                cat "$START" | gunzip -d - > $NEXT
+        elif [ "$FILESTATE" = "POSIX" ]
+        then
+                BASE="$(basename "$(tar -tf $START)")"
+                tar -xf "$START" --strip-components=1
+                mv "$BASE" "$NEXT"
+        elif [ "$FILESTATE" = "7-zip" ]
+        then
+                7z e "$START"
+                BASE="$(ls | grep -E "^$NEXT(\\..*|)$")"
+                mv "$BASE" "$NEXT"
+        fi
+        START="$NEXT"
+        FILESTATE="$(file "$START" | cut -d' ' -f2 )"
+done     
+
+COMMAND TO PARSE HEX VALUES:
+----------------------------
+cut -d' ' -f2-19 dump | head -n -1
+
+
+Take hex and recreate file with https://hexed.it/

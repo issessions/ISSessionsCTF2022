@@ -1,0 +1,4 @@
+Players can execute the executable file if they wish and check the network communications. This is not real malware so it is harmless to run, however, a dedicated VM would still be a good idea just as a best practice for unknown programs. 
+
+
+Alternatively, the player can perform static analysis and locate the Unicode string corresponding to the domain. This can be done using something as simple as 'strings.exe', or loading the file into IDA and checking the parameters passed to InternetConnectW.

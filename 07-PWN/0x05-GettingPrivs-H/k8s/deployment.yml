@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getting-privs
+  labels:
+    app: getting-privs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: getting-privs
+  template:
+    metadata:
+      labels:
+        app: getting-privs
+    spec:
+      containers:
+        - name: getting-privs
+          image: gcr.io/issessions/gettingprivs
+          ports:
+            - containerPort: 22
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            readOnlyRootFilesystem: true

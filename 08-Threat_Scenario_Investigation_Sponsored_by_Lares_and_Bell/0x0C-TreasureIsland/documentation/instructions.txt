@@ -1,0 +1,12 @@
+Question #12:
+------------
+
+To cap off their attack, the attacker used their newly-found domain administrator privileges to steal the Active Directory database containing the password hashes of all users in the domain. What Windows service did they use to copy the locked NTDS.dit file? What utility did they use to invoke this service?
+
+ANSWER FORMAT: monkeyCTF{ServiceName:UtilityNameWithExtension} (All lowercase. Use the utility file name only, NOT the full path.)
+ANSWER EXAMPLE: monkeyCTF{printspooler:calc.exe}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

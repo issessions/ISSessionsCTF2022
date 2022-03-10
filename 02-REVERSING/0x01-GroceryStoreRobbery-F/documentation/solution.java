@@ -1,0 +1,46 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        int pass[] = {
+      0x6e,
+      0x6c,
+      0x6d,
+      0x68,
+      0x66,
+      0x7A,
+      0x40,
+      0x57,
+      0x45,
+      0x78,
+      0x7b,
+      0x6c,
+      0x71,
+      0x5c,
+      0x6a,
+      0x70,
+      0x5c,
+      0x6a,
+      0x77,
+      0x70,
+      0x5c,
+      0x6c,
+      0x74,
+      0x6d,
+      0x5c,
+      0x6a,
+      0x6d,
+      0x75,
+      0x66,
+      0x71,
+      0x70,
+      0x66,
+      0x22,
+      0x7e
+    };
+    
+    for(int i  =0; i<pass.length;i++){
+        System.out.println((char)(pass[i]^3));
+    }
+     }
+}

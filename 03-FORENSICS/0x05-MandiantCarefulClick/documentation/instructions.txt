@@ -1,0 +1,9 @@
+Be Careful what you Click on:
+
+A hacker monkey sent the professor an email looking for work. Our unsuspecting professor trusted the hacker monkey and opened the email. Can you find what the evil monkey said to the professor?
+
+The email was not saved to the filesystem, so you will need to look somewhere else!
+
+On a Windows system (or Virtual Machine), download the Forensics Analysis tool Redline (https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf) and the infected system (https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr). 
+
+Using Redline, load the infected system, find your evidence and the flag!

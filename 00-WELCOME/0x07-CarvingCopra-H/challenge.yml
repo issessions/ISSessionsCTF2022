@@ -1,0 +1,24 @@
+attempts: 0
+author: Minh Giang
+category: FORENSICS
+description: A file was added to the container, however was deleted right after (not
+  sure why). <br>This file is very important, can you retrieve the file?<br><br>Run
+  'docker pull gcr.io/issessions-public/carvingcopra' to get started.
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{layer_extraction}
+hints:
+- content: Docker layers
+  cost: 0
+name: CarvingCopra
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

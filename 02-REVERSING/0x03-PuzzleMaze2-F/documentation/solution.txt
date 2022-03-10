@@ -1,0 +1,5 @@
+CHALLENGE SOLUTION:
+-------------------
+Reading through the code, you'll realize that the program takes user input, and poperates on three values: an array, an index for that array, and another integer. Run through the options to figure out how to set the integer to the desired value, while moving through the maze to get to the end.
+
+FLAG: monkeyCTF{AB1A2FC}

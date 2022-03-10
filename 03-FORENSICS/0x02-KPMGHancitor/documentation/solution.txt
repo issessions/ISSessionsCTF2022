@@ -1,0 +1,11 @@
+This challenge uses Wireshark to reconstruct a TCP stream and retrieve a forensic artefact of the Hancitor dropper. To begin, students will retrieve the pcap file from the challenge and open it in Wireshark: 
+
+A malicious HTTP GET request is featured prominently at the top of the packet capture, and the stream can be followed to identify the breach vector. Alternatively, filtering for HTTP traffic will provide a suitable view with which students will identify that the first breach vector appears to be a Microsoft Word document named invoice_431082.doc: 
+
+The next challenge after the successful identification of the breach vector is to extract the object and generate an MD5 hash that can identify it: 
+
+
+
+The extracted object is an inert file that cannot be interacted with unless the student goes to the effort of manually changing the filetype; further, this sample is functionally dead, as the domain it calls home to has long been deactivated. Students can take this inert file and generate an MD5 hash via CyberChef as recommended by the instructions: 
+
+The CyberChef recipe provided in the challenge will generate a hash value of a0122c18477fbcf5a10ea21ae91bba94 to submit as the flag for the challenge. 

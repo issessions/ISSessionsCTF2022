@@ -1,0 +1,22 @@
+attempts: 0
+author: Minh Giang
+category: PWN
+connection_info: ssh monkey@challenges.issessions.ca -p 5705 [Password = monkey]
+description: The flag is located in the user's home directory, go get the flag.<br><br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{badsudoprivs}
+- monkeyctf{badsudoprivs}
+hint_cost: 0
+name: Getting Privs
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

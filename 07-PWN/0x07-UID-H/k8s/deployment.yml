@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uid
+  labels:
+    app: uid
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uid
+  template:
+    metadata:
+      labels:
+        app: uid
+    spec:
+      containers:
+        - name: uid
+          image: gcr.io/issessions/uid
+          ports:
+            - containerPort: 22
+          resources:
+            requests:
+              cpu: 100m
+          securityContext:
+            readOnlyRootFilesystem: true

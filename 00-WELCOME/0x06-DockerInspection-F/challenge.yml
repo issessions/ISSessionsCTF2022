@@ -1,0 +1,23 @@
+attempts: 0
+author: Minh Giang
+category: WELCOME
+description: A hidden label was left behind by the attacker, can you locate it?<br><br>Run
+  'docker pull gcr.io/issessions-public/carvingcopra' to get started.
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{not_so_hidden_labels}
+hints:
+- content: How can I find a docker label?
+  cost: 0
+name: DockerInspection
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

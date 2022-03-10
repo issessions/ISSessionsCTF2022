@@ -1,0 +1,8 @@
+One of the hacker monkeys somehow got onto our computer! He called us to laugh and say he took all our passwords. The police want evidence he stole the passwords before they can do anything. Can you find it?
+
+On a Windows system (or Virtual Machine), download the Forensics Analysis tool Redline (https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf) and the infected system (https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr). 
+
+Using Redline, load the infected system, find your evidence and the flag!
+
+
+

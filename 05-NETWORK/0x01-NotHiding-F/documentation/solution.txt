@@ -1,0 +1,5 @@
+CHALLENGE SOLUTION:
+-------------------
+On opening the pcap in wireshark/tcpdump,you can see that the first packet captured is an HTTP POST request. Searching into the packet, you will be able to find a string starting with "monkeyCTF{". This string is the flag for this challenge.
+
+FLAG: monkeyCTF(ooh_ooh_unencrypted}

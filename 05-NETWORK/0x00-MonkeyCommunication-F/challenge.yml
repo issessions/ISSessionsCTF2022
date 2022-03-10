@@ -1,0 +1,27 @@
+attempts: 0
+author: Connor Laidlaw
+category: NETWORK
+description: You notice a young monkey crying on a bench, clutching the sides of his
+  laptop screen.<br><br>"I can't do it!!" He yells<br><br>"My TELE30004 Network &
+  Distributed Systems Security homework is TOO HARD. HOW CAN I FIND THE FLAG??"<br><br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- MonkeyCommunication.zip
+flags:
+- monkeyCTF{wiresharkPRO}
+hints:
+- content: Maybe look into the different types of traffic, there should be one type
+    that only happened once!<br>
+  cost: 0
+name: Monkey Communication
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

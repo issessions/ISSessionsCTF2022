@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banana-shop
+  labels:
+    app: banana-shop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banana-shop
+  template:
+    metadata:
+      labels:
+        app: banana-shop
+    spec:
+      containers:
+      - name: banana-shop
+        image:  gcr.io/issessions/bananashop
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

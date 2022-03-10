@@ -1,0 +1,25 @@
+attempts: 0
+author: Mandiant
+category: FORENSICS
+description: One of the hacker monkeys somehow got onto our computer! He called us
+  to laugh and say he took all our passwords. The police want evidence he stole the
+  passwords before they can do anything. Can you find it?<br><br>On a Windows system
+  (or Virtual Machine), download the Forensics Analysis tool Redline (https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf)
+  and the infected system (https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr).
+  <br><br>Using Redline, load the infected system, find your evidence and the flag!<br><br><br><br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{7jpwowRVjk9xKIShd35vef3KMyqFoVlm}
+hint_cost: 0
+name: 'Mandiant: Password Thief'
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

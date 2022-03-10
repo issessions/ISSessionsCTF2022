@@ -1,0 +1,8 @@
+CHALLENGE INSTRUCTIONS:
+-----------------------
+What's up with everyone passing things around all secretively? Do you think you can figure it out with what I've eavesdropped?
+
+FLAG INFORMATION:
+-----------------
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}

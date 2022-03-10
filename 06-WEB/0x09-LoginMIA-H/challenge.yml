@@ -1,0 +1,24 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: nologin.issessions.ca
+description: We have found a login page, however there isn't a form for us to enter
+  credentials! Find a way to login.
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{9h9_mag1c_t1g3r_ha5h}
+hints:
+- content: What tool can you use to send POST request?
+  cost: 0
+name: Login MIA
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

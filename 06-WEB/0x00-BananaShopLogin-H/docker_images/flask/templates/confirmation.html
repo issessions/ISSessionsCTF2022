@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Confirmation
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header">Confirmation</h5>
+            <div class="card-body">
+                <h3 class="card-title">Thank you for shopping, and support our business!</h3>
+                <p class="card-text">Full Name: {{ u[0] }} {{ u[1] }}</p>
+                {% if u[2] %}
+                    <p class="card-text">Email: {{ u[2] }}</p>
+                {% endif %}
+                {% autoescape false %}
+                    <p class="card-text" id="address">Address: {{ u[3] }}</p>
+                {% endautoescape %}
+                <p class="card-text">City: {{ u[4] }}</p>
+                <p class="card-text">Province {{ u[5] }}</p>
+                <p class="card-text">Postal Code: {{ u[6] }}</p>
+                <hr/>
+                <a href="/" class="btn btn-warning">Continue Browsing</a>
+            </div>
+        </div>
+    </div>    
+{% endblock %}

@@ -1,0 +1,31 @@
+attempts: 0
+author: Louai/Kurt
+category: 'Threat Scenario Investigation: Sponsored by Lares and Bell'
+connection_info: https://bit.ly/3KhG71M
+description: 'Question #04:<br>------------<br><br>The attacker queries a registry
+  value to check if commandline auditing is enabled on Win10 (as part of an effort
+  to understand the extent of defenders'' capabilities). What registry values does
+  the attacker enumerate? And what is the name of the utility they use to perform
+  the enumeration? <br><br>ANSWER FORMAT: RegistryValue,EnumerationUtility (All lowercase.
+  Registry value only, NOT full registry path. If the utility is a Powershell cmdlet,
+  simply use the name of the cmdlet. If the utility is an executable, use the executable''s
+  name with the extension.)<br>EXAMPLE ANSWER: passwordlength:get-itempropertyvalue<br><br>**IMPORTANT**<br>All
+  relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb
+  25, 2022 @ 00:20:00.000   (EST)<br>It is important to note that the timezone above
+  are in EST. If you machine is not in EST you will have to adjust the above times
+  to your equivalent time zone.<br>You will know that you are looking at the correct
+  period if there are 1,000,151 logs.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{processcreationincludecmdline_enabled:reg.exe}
+hint_cost: 0
+name: 04-Probing Island Defenses 1
+requirements:
+- CoC
+state: visible
+type: dynamic
+value: 100
+version: '0.1'

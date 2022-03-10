@@ -1,0 +1,7 @@
+docker inspect [image ID] | grep -i "labels"
+
+OR:
+
+docker history --no-trunc [image ID] | grep -i "label"
+
+FLAG: monkeyCTF{not_so_hidden_labels}

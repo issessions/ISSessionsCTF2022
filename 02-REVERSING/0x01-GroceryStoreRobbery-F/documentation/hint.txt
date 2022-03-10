@@ -1,0 +1,3 @@
+To make the code more readable, try using your IDE's beautify fucntion, or use an online tool to do this.
+
+The password has been transformed and saved in the program somehow. What does the code do to compare user input with the saved array? Can you reverse it?

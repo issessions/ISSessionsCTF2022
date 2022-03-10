@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: second-order
+  labels:
+    app: second-order
+spec:
+  ports:
+    - name: http-port
+      port: 5000
+  selector:
+    app: second-order

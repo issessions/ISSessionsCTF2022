@@ -1,0 +1,26 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: banana.issessions.ca/banana?id=0
+description: Seems like everyone is able to get our credentials stored in the database.
+  Could you help us figure out how they are doing it?<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{5QL_uni0n_attack_t3ch}
+hints:
+- content: CHALLENGE HINTS:<br>----------------<br>1. What is a UNION attack?<br>2.
+    Would determining the number of columns returned be useful?
+  cost: 0
+name: BananaShop Banana
+requirements:
+- CoC
+- BananaShop Login
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

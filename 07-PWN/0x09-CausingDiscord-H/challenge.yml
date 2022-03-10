@@ -1,0 +1,28 @@
+attempts: 0
+author: Cristian
+category: PWN
+connection_info: Message "ms!help" to the MonkeySee Discord Bot in the CTF Server
+description: A Discord bot hosted by a newbie programmer from Monkey Island has recently
+  gotten super popular! They are planning on launching a new update that would include
+  login features and even microtransactions. But, a very frightening vulnerability
+  is just waiting to be exploited...<br><br>Can you find it before a malicious actor
+  gets to it first?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{w4tch_y0ur_c4ll5_t0_5y5t3m}
+hints:
+- content: Try looking at the bot's documentation to see if there's something that
+    could potentially be called unsafely.
+  cost: 0
+name: Causing Discord
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

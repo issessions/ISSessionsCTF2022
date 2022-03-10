@@ -1,0 +1,5 @@
+1. Using find
+find . -name FLAG.txt
+find . | grep "FLAG.txt"
+
+I'm sure there's other commands you can do to find the flag, but find is literally the easiest.

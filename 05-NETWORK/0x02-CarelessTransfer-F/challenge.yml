@@ -1,0 +1,28 @@
+attempts: 0
+author: cupojavajoe
+category: NETWORK
+description: 'CHALLENGE INSTRUCTIONS:<br>-----------------------<br>What''s up with
+  everyone passing things around all secretively? Do you think you can figure it out
+  with what I''ve eavesdropped?<br><br>FLAG INFORMATION:<br>-----------------<br>Flag
+  format: monkeyCTF{}<br>Example: monkeyCTF{THISISTHEFLAG}<br>'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- CarelessTransfer.zip
+flags:
+- monkeyCTF{Extr4cting_FTP}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>That's a lot of FTP packets. I wonder
+    if there're any files being transferred...<br>
+  cost: 0
+name: Careless Transfer
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '1.0'

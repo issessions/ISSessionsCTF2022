@@ -1,0 +1,27 @@
+attempts: 0
+author: Todd Brecher
+category: FORENSICS
+description: "A KPMG incident response team has intercepted a file that they believe\
+  \ contains a covert communication between threat actors in a client environment\
+  \ \u2013 can you retrieve and decipher the message before it is too late? <br>The\
+  \ flag format is MonkeyCTF{This_is_the_message}"
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- KPMGNeverEver.zip
+flags:
+- monkeyCTF{I_AM_IN_THE_MAINFRAME}
+hints:
+- content: "Spectrograms and Caesar Salad\u2026 good band name?"
+  cost: 0
+name: 'KPMG: NeverEver'
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

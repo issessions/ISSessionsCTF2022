@@ -1,0 +1,25 @@
+attempts: 0
+author: Connor Laidlaw
+category: WELCOME
+description: This time I compiled a program with my password in it, can you find it
+  from just a binary file?
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Ghidra.zip
+flags:
+- monkeyCTF{ghidraPRO}
+hints:
+- content: Look into a tool called ghidra! Made by the NSA!
+  cost: 0
+name: Ghidra
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

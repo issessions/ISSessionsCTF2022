@@ -1,0 +1,21 @@
+Unless Connor is busy, get Connor or Minh to help participants with this question.
+
+When the website is opened, it is showed there is a json being rendered. We can also note there is a post parameter called orderBy
+
+This is a hint that on the backend there is an sql statement including an orderby clause, which is vulnerable to a technique called blind sql injection.
+
+The player should capture a request for the website in burpsuite, and then play around with adding in an orderBy post parameter to trigger an sql error.
+
+The final injection they will have to make is:
+orderBy= (CASE when (select substring(password,§1§,1) from users where username='flag')='§a§' then id else date END)
+
+In the above statement we change the orderBy from date to id to identify correct password substring.
+
+They will have to send this request to intruder, and create a clusterbomb attack with first payload 1-8 and second payload a-z.
+
+This will then iterate through the letters of the flag user's password, if it finds the correct letter it will be ordered by id otherwise it will be ordered by date. 
+The length and the status of the response will not change for correctly identified password characters. The response will have to be inspected to find which character sequence result in ordering by ID rather than date.
+
+**Note GREP match can be used to filter and identify correct password responses**
+
+If on burp community, this attack may take up to 10 minutes to complete.  They should test their attack using known values before running an automated attack.

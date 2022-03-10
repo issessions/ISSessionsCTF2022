@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Export required environment variables
+export FLASK_APP=app.py
+export FLASK_ENV=development
+
+## Run flask application
+flask run

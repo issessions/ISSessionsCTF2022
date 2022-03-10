@@ -1,0 +1,12 @@
+Question #10:
+------------
+
+Defenders at Monkey Island security were able to recover the LSASS dump file the attacker created (attached). They are worried that the credentials of the Domain Administrator account ("harambe") were compromised as he was logged into Win2019 when the dump occured. They want to know if you can find harambe's NT password hash in the dump file. What is harambe's NT hash?
+
+ANSWER FORMAT: monkeyCTF{NTPasswordHashOfHarambe} (All lowercase.)
+EXAMPLE ANSWER: monkeyCTF{787a6994b59bbdf146616547b326fa71}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

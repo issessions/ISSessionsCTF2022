@@ -1,0 +1,29 @@
+attempts: 25
+author: Minh Giang
+category: WEB
+connection_info: monkey.issessions.ca
+description: The web app only returns blog entries, however, our target is a password.
+  We tried SQL injections but we don't think the app is vulnerable because it doesn't
+  return any errors. Any ideas on how to get their password?<br><br>TECHNICAL NOTES:<br><br>The
+  password is only 8, lowercase ascii characters. <br><br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- MonkeyNoSeeMonkeyNoDo.zip
+flags:
+- monkeyCTF{iisblind}
+hints:
+- content: How do post parameters work? Can you add one on your own?<br><br>Can you
+    try to trigger an error in a post parameter?
+  cost: 0
+name: Monkey No See Monkey No Do
+requirements:
+- CoC
+state: visible
+tags:
+- hard
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hunt
+  labels:
+    app: hunt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hunt
+  template:
+    metadata:
+      labels:
+        app: hunt
+    spec:
+      containers:
+      - name: hunt
+        image:  gcr.io/issessions/hunt-flask
+        ports:
+        - containerPort: 5000
+        resources:
+            requests:
+              cpu: 100m
+      

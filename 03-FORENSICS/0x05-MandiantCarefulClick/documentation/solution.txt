@@ -1,0 +1,46 @@
+Forensics Challenge #2
+A hacker monkey sent the professor an email looking for work. Our unsuspecting professor trusted the hacker monkey and
+opened the email. Can you find what the evil monkey said to the professor?
+The email was not saved to the filesystem, so you will need to look somewhere else!
+On a Windows system (or Virtual Machine), download the Forensics Analysis tool Redline
+(https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf) and the infected system
+(https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr). Using Redline, load the infected system, find your
+evidence and the flag!
+Solution
+Overview
+Contestants will perform forensic analysis of a system that has been infected by an attacker using Redline. The contestants
+need to identify any areas in a forensic collection that might contain the contents of an email for their review. As we are not
+providing loose files for contestants to search though, the answer will reside in memory.
+Contestants will need to identify the name of the email and search for that email in memory strings. To get there, they can
+pick up on a few hints:
+- Spear phishing. This would hint towards search for common email domains.
+- Looking for work. This can help with potential keywords to search and identify the email.
+Once contestants identify the email contents, they will identify a pastebin link and will find the flag at that URL.
+monkeyCTF{ptLXhJKcqrji7at2mCVKyGkzCUzx9ji6}
+TECHNICAL DETAILS
+Open Redline and load the evidence provided.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 1: Redline after loading evidence
+After loading the evidence, for evidence of a spear phishing email. This can be found in multiple locations such as the URL
+history seen below
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 2: Example of leads they might find.
+From this lead, they can identify the Title of the email and the sender.
+Eventually contestants need to go to the Process -> Strings area of memory to begin searching. The same information found in
+Figure 2 can be found by searching and filtering Process Strings for gmail.com
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 3: Search for common email domains in Process Strings.
+After identifying this information, contestants should pivot using some of the information they have uncovered and filter for
+those items. Filtering for “I Need a Job” will present you with the following:
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 4: First signs of email contents.
+Contestants should recall the spear-phishing attempt came from someone looking for work, and identify the beginning of an
+email of a job seeker.
+Expanding upon one of the lines from the job seeker will include a link to a pastebin
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 5: Identifying the link to pastebin
+When a contestant visits the pastebin (https://pastebin.com/umV3UmWB) found in that email message they will find the flag
+monkeyCTF{ptLXhJKcqrji7at2mCVKyGkzCUzx9ji6}.
+Figure 6: Finding the flag
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.

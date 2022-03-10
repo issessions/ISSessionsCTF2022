@@ -1,0 +1,26 @@
+attempts: 0
+author: cupojavajoe
+category: NETWORK
+description: It seems that someone's posting important messages over an unencrypted
+  protocol. Let's see if you can find the flag...<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- NotHiding.zip
+flags:
+- monkeyCTF{ooh_ooh_unencrypted}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>There're a lot of HTTP packets in
+    the pcap. I wonder if you can find anything important in the packets' payloads...<br>
+  cost: 0
+name: Not Hiding
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '1.0'

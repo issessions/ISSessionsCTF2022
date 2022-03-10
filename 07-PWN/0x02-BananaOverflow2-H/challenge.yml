@@ -1,0 +1,23 @@
+attempts: 0
+author: Connor Laidlaw
+category: PWN
+connection_info: nc challenges.issessions.ca 5702
+description: too many bannana x2
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- BananaOverflow2.zip
+flags:
+- monkeyCTF{PuttingSkillsTogether}
+hint_cost: 0
+name: BananaOverflow2
+requirements:
+- CoC
+state: visible
+tags:
+- medium
+type: dynamic
+value: 100
+version: '0.1'

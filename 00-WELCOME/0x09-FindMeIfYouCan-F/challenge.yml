@@ -1,0 +1,27 @@
+attempts: 0
+author: Cristian
+category: WELCOME
+description: 'We''ve obtained a cryptic hard drive with a suspicious file. However,
+  there are way too many directories for us to manually search! All what we know is
+  that the file is named "FLAG.txt". Are you able to get the file for us?<br><br>NOTE:
+  You''ll need to manually add "monkeyCTF{*flag here*}" to your submission!'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- FindMeIfYouCan.zip
+flags:
+- monkeyCTF{l1st1ng_4nd_f1lt3r1ng_d1r3ct0r135_15_u53fu1}
+hints:
+- content: Try looking at documentation for the "find" or "locate" command.
+  cost: 0
+name: Find Me If You Can
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

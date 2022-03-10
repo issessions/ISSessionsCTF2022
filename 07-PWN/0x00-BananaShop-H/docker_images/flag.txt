@@ -1,0 +1,1 @@
+monkeyCTF{always_check_edge_cases}

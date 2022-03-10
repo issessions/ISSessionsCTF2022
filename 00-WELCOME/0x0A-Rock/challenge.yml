@@ -1,0 +1,26 @@
+attempts: 0
+author: Todd Brecher
+category: WELCOME
+description: Kali Linux comes pre-configured with several useful tools for use with
+  password related tools and attacks. Research these tools and find out where the
+  wordlists are stored by default. <br>Identify the biggest password wordlist included
+  by default - how many passwords (lines) are present in the wordlist? <br>The flag
+  format is MonkeyCTF{filename_bignumberhere}
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{rockyou.txt_14344392}
+hints:
+- content: 'https://www.kali.org/tools/wordlists/ '
+  cost: 0
+name: 'KPMG: Rock some more'
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

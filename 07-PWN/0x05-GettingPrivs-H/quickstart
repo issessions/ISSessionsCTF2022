@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build -t wgetchallenge docker_images/
+sudo docker run -d --privileged -p 22:22 --hostname monkey --rm --read-only wgetchallenge

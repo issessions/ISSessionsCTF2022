@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t fastbase docker_images/
+docker run -d --privileged -p 22:22 --rm --cap-add LINUX_IMMUTABLE fastbase

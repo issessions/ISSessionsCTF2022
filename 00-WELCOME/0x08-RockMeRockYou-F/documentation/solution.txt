@@ -1,0 +1,14 @@
+Downloads and installations:
+
+rockyou.txt: https://github.com/praetorian-inc/Hob0Rules/blob/master/wordlists/rockyou.txt.gz
+fcrackzip: sudo apt-get install -y fcrackzip
+
+Cracking:
+
+fcrackzip -D rockyou.txt important.zip
+found file 'flag.txt', (size cp/uc     43/    31, flags b, chk 96ea)
+checking pw colleen420                              
+
+PASSWORD FOUND!!!!: pw == blueflag11
+
+FLAG: monkeyCTF{5up3r_w3ak_pa55w0rd}

@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+
+  nginx:
+    container_name: hashcollision-nginx-web
+    image: hashcollision-nginx-web:1.0
+    build: ./docker_images/nginx/
+    ports:
+      - ${APP_IP}:${APP_PORT}:80
+    depends_on:
+      - "php"
+    
+    
+
+  php:
+    container_name: hashcollision-php-web
+    image: hashcollision-php-web:1.0
+    build: ./docker_images/php/
+

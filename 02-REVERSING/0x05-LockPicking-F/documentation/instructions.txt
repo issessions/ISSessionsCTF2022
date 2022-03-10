@@ -1,0 +1,12 @@
+CHALLENGE INSTRUCTIONS:
+-----------------------
+Look what we have here! A locked box? There might be something inside, but the lock doesn't seem to be normal...
+Luckly, it looks like someone left a note on how the lock works, let's get to it!
+---
+The flag is the shortest input required to trigger a success message from the provided program.
+Note: Don't forget to include the ending E in the flag.
+
+FLAG INFORMATION:
+-----------------
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}

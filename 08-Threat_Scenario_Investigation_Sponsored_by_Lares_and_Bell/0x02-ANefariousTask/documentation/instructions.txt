@@ -1,0 +1,12 @@
+Question #02:
+------------
+
+What is the name of the scheduled task the attacker used to persist on the system? How often does it run (in minutes)? For how often it runs, use the Task Scheduler Time Interval format (https://docs.microsoft.com/en-us/windows/win32/taskschd/taskschedulerschema-interval-repetitiontype-element)?
+
+ANSWER FORMAT: monkeyCTF{TaskName:TaskSchedulerTimeIntervalFormat} (All uppercase.)
+EXAMPLE ANSWER: monkeyCTF{ISSESSIONCTFISATASKINGENDEAVOUR:PT5M}
+
+**IMPORTANT**
+All relevent logs are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)
+It is important to note that the timezone above are in EST. If you machine is not in EST you will have to adjust the above times to your equivalent time zone.
+You will know that you are looking at the correct period if there are 1,000,151 logs.

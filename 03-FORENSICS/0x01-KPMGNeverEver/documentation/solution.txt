@@ -1,0 +1,5 @@
+Students are provided with two pretexts by the challenge: 
+    1. There is a communication hidden within the file 
+    2. It is covert, and may be encoded in some fashion
+To retrieve the message, students will need to first examine the file. We've used Rick Astley's hit song, Never Gonna Give You Up to hide the message. At approximately 18 seconds in, a textual message has been spliced into the audio file, and a glitchy series of sounds will play to indicate the location of the message. 
+There are a variety of tools that can visualize spectrograms, online or otherwise, including Audacity; Audacity is a free audio editing software utility that can be used to visualize spectrograms.  

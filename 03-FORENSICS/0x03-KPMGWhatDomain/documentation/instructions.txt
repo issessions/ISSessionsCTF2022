@@ -1,0 +1,3 @@
+There has been a huge incident! A master hacker has broken into the environment and deployed malware everywhere. The incident response team has extracted a sample, but they need your help to specific characteristics to block its internet communications.
+The incident response team has asked you to investigate what domain the malware communicates with. 
+The flag format is MonkeyCTF{domain.tld}

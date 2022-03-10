@@ -1,0 +1,2 @@
+Johnny has compressed one of his important files with a password, with the intentions of securing it.
+Unfortunately, he has forgotten the password to open the archive. Fortunately he is also the author of a popular password breaking tool, but he doesn't have a computer to use it! Can you find the tool and help him retrieve his password?

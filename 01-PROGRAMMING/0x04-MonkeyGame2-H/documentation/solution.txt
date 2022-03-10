@@ -1,0 +1,4 @@
+Similar to the first question, only additional step is that they will now have to reduce the operators
+down to a single instance before passing it to eval or creating their own string parsing function.
+
+parse through the string, if current is an operator, continue until you find the last operator and then remove all the duplicates.

@@ -1,0 +1,3 @@
+A Discord bot hosted by a newbie programmer from Monkey Island has recently gotten super popular! They are planning on launching a new update that would include login features and even microtransactions. But, a very frightening vulnerability is just waiting to be exploited...
+
+Can you find it before a malicious actor gets to it first?

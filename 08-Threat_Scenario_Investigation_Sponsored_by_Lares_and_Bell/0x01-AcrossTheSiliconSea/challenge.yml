@@ -1,0 +1,28 @@
+attempts: 0
+author: Louai/Kurt
+category: 'Threat Scenario Investigation: Sponsored by Lares and Bell'
+connection_info: https://bit.ly/3KhG71M
+description: 'Question #01:<br>------------<br><br>Throughout your investigation,
+  you realize that the attacker''s malicious binary is communicating with multiple
+  external hosts. What is the fully qualified domain name of the first host it ever
+  communicates with? What network protocol (i.e. Command & Control (C2) channel) was
+  used to establish this initial connection?<br><br>ANSWER FORMAT: monkeyCTF{FullyQualifiedDomainNameOfC2Server:NameOfProtocol}<br>EXAMPLE
+  ANSWER: monkeyCTF{anon.issessions.ca:ftp}<br><br>**IMPORTANT**<br>All relevent logs
+  are between these time periods: Feb 24, 2022 @ 23:39:00.000 - Feb 25, 2022 @ 00:20:00.000   (EST)<br>It
+  is important to note that the timezone above are in EST. If you machine is not in
+  EST you will have to adjust the above times to your equivalent time zone.<br>You
+  will know that you are looking at the correct period if there are 1,000,151 logs.'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{ec2-3-135-22-213.us-east-2.compute.amazonaws.com:https}
+hint_cost: 0
+name: 01-Across The Silicon Sea
+requirements:
+- CoC
+state: visible
+type: dynamic
+value: 100
+version: '0.1'

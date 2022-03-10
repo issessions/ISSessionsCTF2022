@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+
+  nginx:
+    container_name: loginmia-nginx-web
+    image: loginmia-nginx-web:1.0
+    build: ./docker_images/nginx/
+    ports:
+      - 127.0.0.1:5000:80
+    depends_on:
+      - "php"
+
+  php:
+    container_name: loginmia-php-web
+    image: loginmia-php-web:1.0
+    build: ./docker_images/php/

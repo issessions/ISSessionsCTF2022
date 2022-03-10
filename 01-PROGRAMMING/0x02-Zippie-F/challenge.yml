@@ -1,0 +1,26 @@
+attempts: 0
+author: Minh Giang
+category: PROGRAMMING
+description: One of the employees at the company accidentally compressed a very important
+  file a couple of times. <br>Can you get that file back?<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Zippie.zip
+flags:
+- monkeyCTF{hexstruction_recondump_zip}
+hints:
+- content: CHALLENGE HINT:<br>---------------<br>https://hexed.it/ or hexeditor will
+    be useful.
+  cost: 0
+name: Zippie
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

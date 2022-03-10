@@ -1,0 +1,11 @@
+SQL injection
+
+There is a second order SQL injection in the print name function.
+
+The login screen and registration screen are both safe, however the registration screen allows you to create a username that contains SQL syntax.
+
+The query after log in where it checks to see the first name of the user is vulnerable, as the app assumes values it grabs from the databse are safe.
+
+A malicious user can create an account with the following injection: ' UNION select password from users where username = 'admin' order by password desc--
+
+They would then have to login with this account, where the injection will finally be executed by the unsafe backend query, printing out the password of the admin user.

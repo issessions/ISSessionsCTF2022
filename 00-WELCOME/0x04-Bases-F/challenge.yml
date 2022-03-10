@@ -1,0 +1,26 @@
+attempts: 0
+author: Connor Laidlaw
+category: WELCOME
+description: I was messing around with some conversions so I could hide my password...
+  but now I don't remember which ones I did?? Can you help??
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Bases.zip
+flags:
+- monkeyCTF{base_encodings_are_important}
+hints:
+- content: Check out the website CyberChef. Are there any encoding types that match
+    the form of Basexx?
+  cost: 0
+name: Basexx
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

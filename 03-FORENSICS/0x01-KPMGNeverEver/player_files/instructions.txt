@@ -1,0 +1,2 @@
+A KPMG incident response team has intercepted a file that they believe contains a covert communication between threat actors in a client environment – can you retrieve and decipher the message before it is too late? 
+The flag format is MonkeyCTF{This_is_the_message}

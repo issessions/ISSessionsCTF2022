@@ -1,0 +1,13 @@
+From the code, the application can take 'username' and 'password' as parameters for a post request. 
+Use curl to send data as post request to the application.
+
+Use 'admin' as the username, and '62241955574' as the password. When '62241955574' is hashed with tiger160,4 and compared to a '0' with a '==', it will return true.
+https://www.whitehatsec.com/blog/magic-hashes/
+
+FLAG: monkeyCTF{9h9_mag1c_t1g3r_ha5h}
+
+COMMAND:
+--------
+curl -d "username=admin&password=62241955574" -X POST <URL>
+
+Replace <URL> with the challenge URL.

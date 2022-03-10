@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t whichissmallest docker_images/
+docker run --rm --privileged -p 6666:6666 whichissmallest

@@ -1,0 +1,1 @@
+MonkeyCTF{I_AM_IN_THE_MAINFRAME}

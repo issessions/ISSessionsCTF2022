@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pwn-the-abtm
+  labels:
+    app: pwn-the-abtm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pwn-the-abtm
+  template:
+    metadata:
+      labels:
+        app: pwn-the-abtm
+    spec:
+      containers:
+      - name: pwn-the-abtm
+        image:  gcr.io/issessions/pwntheabtm
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

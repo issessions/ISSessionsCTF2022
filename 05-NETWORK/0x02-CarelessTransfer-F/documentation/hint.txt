@@ -1,0 +1,3 @@
+CHALLENGE HINT:
+---------------
+That's a lot of FTP packets. I wonder if there're any files being transferred...

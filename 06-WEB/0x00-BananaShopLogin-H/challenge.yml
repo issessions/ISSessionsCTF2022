@@ -1,0 +1,27 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: banana.issessions.ca/login
+description: 'HELP NEEDED! We think our login page is vulnerable. Could you please
+  help us assess it to prevent unauthorized access?<br><br>Technical note: You need
+  to login as an administrator user, which can be done entirely through the login
+  form. If completed successfully, the flag will be printed immediately upong logging
+  in. All other pages of the site relate to different challenges.<br>'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{ba5ic_5q1_inj3cti0n5}
+hints:
+- content: 1. What is SQL injection?<br>2. SQLite3
+  cost: 0
+name: BananaShop Login
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

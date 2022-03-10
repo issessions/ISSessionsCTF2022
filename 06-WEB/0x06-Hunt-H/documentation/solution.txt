@@ -1,0 +1,15 @@
+CHALLENGE SOLUTION:
+-------------------
+
+FLAG PART 1: View source code of HTML
+
+FLAG PART 2: Right-click and select Inspect, then view CSS code 
+
+FLAG PART 3: Right-click and select Inspect, then view JS code
+
+FLAG PART 4: Check the cookie value
+
+FLAG PART 5: View /robots.txt
+
+
+FLAG: monkeyCTF{scavenger_hunt_good_job}

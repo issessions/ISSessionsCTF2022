@@ -1,0 +1,24 @@
+There is a file flag.txt that is only read when a "SIGTSTP" signal is received, otherwise known as the user press ing CTRL + Z
+
+However, the file can only be read by root. 
+
+Users can also notice that there is a SIGFPE signal, which is triggered on a divide by zero error. 
+
+In this SIGFPE error, the uid of the program is temporarily set to 0/root, however only for a short time. 
+
+The solution is as follows
+
+1. The user must create a script that sends approximately 10000 operations, increasing the size of the operation history.
+
+2. The user must then select "divide" and enter "1" as the value, which causes a divide by zero error as the denominator is 100 /(input-1)
+
+3. The user then has a very short window, under one second, to press CTRL Z which will cause a SIGTSTP error while uid is set as root.
+
+
+python3 -c "print('a/n3/n'*10000)" > test.txt
+cat test.txt - | gottagofast
+they will then have a VERY short window, approximately half a second to press CTRL Z, which will print the flag.
+
+
+
+IF SOMEONE HAS A QUESTION ABOUT THIS, PLEASE PING @CONNOR OR @JOHN, the program is more complicated than this solution can explain.

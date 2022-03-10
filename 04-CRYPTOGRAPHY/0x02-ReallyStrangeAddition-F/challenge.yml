@@ -1,0 +1,27 @@
+attempts: 0
+author: cupojavajoe
+category: CRYPTOGRAPHY
+description: Oh no! Your super secret document full of monkey scratch has been encrypted
+  by ransomware! Luckily, the culprit doesn't seem too smart, and made the program
+  easy to read...<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- ReallyStrangeAddition.zip
+flags:
+- monkeyCTF{decryptundorsa}
+hints:
+- content: Oh? If you look at the two functions, one of them looks an awful lot like
+    an RSA encryption... Are there any ways to reverse it?
+  cost: 0
+name: Really Strange Addition
+requirements:
+- CoC
+state: visible
+tags:
+- beginner
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,2 @@
+The flag is located in the user's home directory, go get the flag.
+

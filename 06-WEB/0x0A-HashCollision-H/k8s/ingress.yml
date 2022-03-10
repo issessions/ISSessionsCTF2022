@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hash-collision
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/backend-protocol: "FCGI"
+    nginx.ingress.kubernetes.io/fastcgi-index: "index.php"
+    nginx.ingress.kubernetes.io/fastcgi-params-configmap: "hash-collision"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - hash.issessions.ca
+      secretName: hash-collision-tls
+  rules:
+    - host: hash.issessions.ca
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hash-collision
+                port:
+                  number: 9000

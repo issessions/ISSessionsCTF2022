@@ -1,0 +1,24 @@
+attempts: 0
+author: Connor Laidlaw
+category: PROGRAMMING
+connection_info: nc challenges.issessions.ca 5101
+description: Is 1 bigger than 3 and 5?<br>Is 3 bigger than 2 and 4?<br>Who knows<br><br>reply!!!!
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{Nice_Connecting_Work}
+hints:
+- content: Look into a tool like pwntools so you can connect to the NC connection
+    and use code to reply!<br>
+  cost: 0
+name: WhichIsSmallest
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

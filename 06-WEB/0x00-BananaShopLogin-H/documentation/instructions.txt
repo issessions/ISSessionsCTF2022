@@ -1,0 +1,3 @@
+HELP NEEDED! We think our login page is vulnerable. Could you please help us assess it to prevent unauthorized access?
+
+Technical note: You need to login as an administrator user, which can be done entirely through the login form. If completed successfully, the flag will be printed immediately upong logging in. All other pages of the site relate to different challenges.

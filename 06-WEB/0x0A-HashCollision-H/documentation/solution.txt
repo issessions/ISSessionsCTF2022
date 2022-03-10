@@ -1,0 +1,30 @@
+CHALLENGE SOLUTION:
+-------------------
+There is no sha256 collision. To solve this challenge, you need to break the condition for the 
+if statement that checks the hashes.
+
+The hash function expects string inputs so giving it an array will break the function, returning
+FALSE. Since both hashes return FALSE, the condition for the if statement will be TRUE.
+
+Notice it's a GET request. Pass an array for the username and another array for the password through the url:
+/index?username[]=a&password[]=b
+
+FLAG: monkeyCTF{c0ndit0n_bypa55_n0t_c011i5ion5}
+
+<?php
+    if (isset($_GET['username']) && isset($_GET['password'])) {
+        if ($_GET['username'] === $_GET['password']) {
+            echo "<h2>Username and password cannot be the same!</h2>";
+        } else {
+            if (hash('sha256', $_GET['username']) === hash('sha256', $_GET['password'])) {
+                include('flag.php');
+                echo "<h2>$flag</h2>";
+            } else {
+                echo "<img src='https://media.giphy.com/media/l4pLY0zySvluEvr0c/giphy.gif'/>";
+            }
+        }
+    } else {
+        echo '<h2>Find the magical collision!</h2>';
+    }
+?>
+

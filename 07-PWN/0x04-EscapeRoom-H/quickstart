@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build -t getfiletype docker_images/
+docker run --rm --privileged -p 6666:6666 getfiletype
+

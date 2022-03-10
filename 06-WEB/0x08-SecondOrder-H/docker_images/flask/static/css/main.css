@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+}
+
+.featurette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+  
+  /* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.stock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+  

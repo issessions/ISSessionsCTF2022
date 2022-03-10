@@ -1,0 +1,22 @@
+attempts: 0
+author: Minh Giang
+category: WEB
+connection_info: biscuit.issessions.ca
+description: HM? For some reason I'm getting a normal cookie when I need a supercookie
+  to login. I hope the developers fix this soon.<br>
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+flags:
+- monkeyCTF{c00kie_monster}
+hint_cost: 0
+name: Big Biscuit
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

@@ -1,0 +1,27 @@
+attempts: 0
+author: Minh Giang
+category: CRYPTOGRAPHY
+description: 'CHALLENGE DESCRIPTION:<br>----------------------<br>Can you decrypt
+  each string to figure out what they mean?<br><br>NOTE: The decrypted string is the
+  key to finding the next string<br>'
+extra:
+  decay: 30
+  initial: 100
+  minimum: 30
+files:
+- Ciphers.zip
+flags:
+- monkeyCTF{multi_cipher_encryption}
+hints:
+- content: 1. What spins 13 times?<br><br>2. Vinegar seasoning<br><br>3. Transporting
+    columns<br><br>4. You have to play fair!<br>
+  cost: 0
+name: Ciphers
+requirements:
+- CoC
+state: visible
+tags:
+- easy
+type: dynamic
+value: 100
+version: '0.1'

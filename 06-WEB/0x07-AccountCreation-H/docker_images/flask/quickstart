@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t bananashop .
+docker run --rm --privileged -p 5000:5000 bananashop

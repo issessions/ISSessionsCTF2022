@@ -1,0 +1,8 @@
+CHALLENGE SOLUTION:
+-------------------
+1. Use a reverse engineering tool such as Radare2 to analyze the binary
+2. Find the function with the hint "noPasswordsHere"
+3. Notice object secret has had math operations performed on the object
+4. Reverse the simple math operations performed on the object
+5. After reversing the simple math operations performed on the object, the player will obtain the password
+6. Run the binary and use the password obtain the flag

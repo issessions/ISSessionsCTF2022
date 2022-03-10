@@ -1,0 +1,23 @@
+CHALLENGE SOLUTION:
+-------------------
+The first step is to figure out what the program does.
+Compiling and running the code shows that the program expects the user to enter a single line, after which the program response with either a fail or success message.
+In the code, it appears that after getting the user's input, the program iterates through it character by character and performs "command()" on it.
+Observing the "command()" function, it appears that it performs simple addition/subtraction operations on variable "v3" in 1, 2, 10, or 20 increments.
+Looking back up at the loop conditional, you can see that "v3" is used to index the "v4" array. Considering the set increments that v3 is changed by, you could reframe the "v4" array as a 10x7 2D array. (with the 10/20 increments moving the "v3" index up/down the array.
+Looking at conditions for the success/fail message, "v3" has to be on a spot in the "v4" array where its value is 3.
+	Looking at the loop condition shows that, if the "v3" ever references a 1 value, the loop will terminate and return the fail message.
+
+As such, the challenge can be considered a 2D maze traversal, where you are "v3", and you only want to move such that you only touch "2" or "3" indices in the "v4" array.
+
+Attempting to solve the maze will result in one of the 8 solutions below.
+
+FLAGS:
+	- monkeyCTF{DB2D220}
+	- monkeyCTF{DB323C0}
+	- monkeyCTF{DB3C010}
+	- monkeyCTF{DB3C320}
+	- monkeyCTF{DB3CDC0}
+	- monkeyCTF{DCDB3C0}
+	- monkeyCTF{DB233C0}
+	- monkeyCTF{DBAB3C0}

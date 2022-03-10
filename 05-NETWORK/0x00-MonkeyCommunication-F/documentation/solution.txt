@@ -1,0 +1,1 @@
+Filter by traffic types, there is only one ICMP request containing the flag.

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pirate-attack
+  labels:
+    app: pirate-attack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pirate-attack
+  template:
+    metadata:
+      labels:
+        app: pirate-attack
+    spec:
+      containers:
+      - name: pirate-attack
+        image:  gcr.io/issessions/pirateattack
+        ports:
+        - containerPort: 6666
+        resources:
+            requests:
+              cpu: 100m
+        securityContext:
+          privileged: true
+      

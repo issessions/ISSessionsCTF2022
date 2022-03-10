@@ -1,0 +1,14 @@
+CHALLENGE SOLUTION:
+-------------------
+There are two functions you need to understand to be able to reverse the encryption: doa() and dob().
+If you read through doa(), it simply goes through every byte in the file and performs a bit rotation.
+For dob(), you might be able to recognize that it's performing an RSA encryption based on a few clues, one of the biggest ones being:
+ - That the innermost while loop is performing Fast Modular Exponentiation
+Once you understand these two parts, you can reuse the provided script to decrypt the flag.txt file:
+- Figure out the RSA decryption key by factorizing n in dob() (decryption key = 3450419)
+- Altering the bit rotation in doa() to rotate the opposite direction
+Afterwards, by reversing the order of execution of the encryption and encodings, it will be possible to recreate the original file
+
+...
+
+FLAG: monkeyCTF{decryptundorsa}

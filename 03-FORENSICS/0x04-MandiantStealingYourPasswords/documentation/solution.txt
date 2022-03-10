@@ -1,0 +1,42 @@
+Forensics Challenge #1
+One of the hacker monkeys somehow got onto our computer! He called us to laugh and say he took all our passwords. The
+police want evidence he stole the passwords before they can do anything. Can you find it?
+On a Windows system (or Virtual Machine), download the Forensics Analysis tool Redline
+(https://drive.google.com/file/d/1jjRYHjYIruBW9RdwDQ4u2Cgt63tD8Ezf) and the infected system
+(https://drive.google.com/file/d/1kXHFtMVaGGD01A_rbCj-I--64rTfbJyr)
+Using Redline, load the infected system, find your evidence and the flag!
+Solution
+Overview
+Contestants will perform forensic analysis of a system that has been infected by an attacker using Redline. The contestants
+need to identify a commonly used credential harvester and prove that it has been executed. The infected system contains
+many different forensic artifacts you might find on a system, but the key here is PROOF of execution. Contestants may need to
+research windows forensic artifacts that provide that proof something was executed, and not just present the hard drive of a
+system.
+This challenge will promote critical thinking about what is considered evidence, verses a theory of something happening if they
+find one link in the chain.
+monkeyCTF{7jpwowRVjk9xKIShd35vef3KMyqFoVlm}
+TECHNICAL DETAILS
+Open Redline and load the evidence provided.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 1: Redline after loading evidence
+After loading the evidence, the contestants need to start looking for common credential harvesting tools. This can be found in
+many different forensic' artifacts. Contestants might find a file called mimi.zip and associate it with Mimikatz.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 2: Example of leads they might find
+We are looking for evidence of execution which you cannot be established from just looking at files present on the system. The
+contestants can find proof a file was executed by looking at the Windows Prefetch artifact:
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 3: View of prefetch files
+Inside this list parsed prefetch information, you should notice the execution of MIMIKATZ.exe that was recorded as being
+executed from C:\TMP\M\MIMIKATZ.EXE.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 4: Evidence of Mimikatz.exe execution
+They still need to find the flag that's associated with this challenge. Prefetch records several things when a binary is executed
+on Windows, including files that were accessed as the program started. Selecting the “Accessed Files” on the right, a list items
+is presented to the user.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.Figure 5: Checking accessed files
+Contestants should identify a flag in this area and copy the monkeyCTF{7jpwowRVjk9xKIShd35vef3KMyqFoVlm} flag for
+submission to the portal.
+©2022 Mandiant, Inc. All rights reserved. Mandiant is a registered trademark of Mandiant, Inc. All other brands, products, or service names
+are or may be trademarks or service marks of their respective owners.
